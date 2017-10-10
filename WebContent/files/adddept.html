@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>人事管理系统</title>
+<link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+<script language="JavaScript" type="text/javascript">
+function tishi()
+{
+  var a=confirm('数据库中保存有该人员基本信息，您可以修改或保留该信息。');
+  if(a!=true)return false;
+  window.open("冲突页.htm","","depended=0,alwaysRaised=1,width=800,height=400,location=0,menubar=0,resizable=0,scrollbars=0,status=0,toolbar=0");
+}
+
+function check()
+{
+document.getElementById("aa").style.display="";
+}
+
+
+function link(){
+alert('保存成功！');
+    document.getElementById("fom").action="xuqiumingxi.htm";
+   document.getElementById("fom").submit();
+}
+
+
+
+</script>
+<style type="text/css">
+<!--
+.atten {font-size:12px;font-weight:normal;color:#F00;}
+-->
+</style>
+</head>
+
+<body class="ContentBody">
+  <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost" >
+<div class="MainDiv">
+<table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+  <tr>
+      <th class="tablestyle_title" >部门添加页面</th>
+  </tr>
+  <tr>
+    <td class="CPanel">
+		
+		<table width="100%" border="0" cellpadding="4" cellspacing="1" bgcolor="#464646" class="newfont03">
+				 <tr class="CTitle" >
+                    	<td height="22" colspan="10" align="center" style="font-size:16px">添 加 部 门 </td>
+                  </tr>
+                  <tr bgcolor="#EEEEEE">
+				    <td width="2%" align="center">&nbsp;</td>
+                    <td width="9%" height="30"><div align="center">部门编号</div></td>
+                    <td width="11%"><div align="center">部门名称</div></td>
+					<td width="7%"><div align="center">类型</div></td>
+                    <td width="11%"><div align="center">电话</div></td>
+					<td width="9%"><div align="center">传真</div></td>
+					<td width="9%"><div align="center">描述</div></td>
+					<td width="10%"><div align="center">上级部门</div></td>
+					<td width="13%"><div align="center">成立日期</div></td>
+					<td width="19%"><div align="center">操作</div></td>
+                  </tr>
+                  <tr bgcolor="#FFFFFF">
+                    <td width="2%" align="center">1</td>
+				    <td width="12" height="40" ><div align="center">
+				      <label>
+				      <input name="textfield" type="text" size="12" />
+				      </label>
+				    </div></td>
+                    <td ><div align="center"><a href="listmokuaimingxi.htm" onclick=""></a>
+                        <label>
+                      <input name="textfield2" type="text" size="10" />
+                      </label>
+                    </div></td>
+					<td><label>
+					  <select name="select">
+					    <option value="公司">公司</option>
+					    <option value="部门">部门</option>
+			        </select>				      </label></td>
+                    <td><div align="center">
+                      <label>
+                      <input name="textfield3" type="text" value="" size="10" />
+                      </label>
+                    </div></td>
+                    <td><div align="center">
+                      <label>
+                      <input name="textfield4" type="text" value="" size="10" />
+                      </label>
+                    </div></td>
+                    <td><div align="center">
+                      <label>
+                      <input name="textfield5" type="text" value="" size="10" />
+                      </label>
+                    </div></td>
+                    <td><div align="center">
+                      <label>
+                      <input name="textfield6" type="text" value="" size="10" />
+                      </label>
+                    </div></td>
+                    <td><div align="center">
+                      <label>
+                      <input name="textfield7" type="text" value="" size="16" />
+                      </label>
+                    </div></td>
+                    <td><div align="center"></a><a href="#">保存</a> <a href="#"> 取消</a></div></td>
+                  </tr>
+				  </table>
+  
+  
+  </table>
+
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<title>管理区域</title>
+<style type="text/css">
+<!--
+.STYLE3 {font-size: 10; }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+
+function link1(){
+var bh=document.fom.bianhao.value;
+var xm=document.fom.xingming.value;
+var ks=document.fom.stime.value;
+var js=document.fom.etime.value; 
+var xz=document.fom.r.value;                                                                                                     
+if(bh==''&&xm==''&&ks==''&&js==''){
+alert("请填写查询条件");
+return false;  }      
+ return true;                                                                                                                  
+}
+  function link(){
+if(document.fom.newjobid.value='20100034'){
+		alert("该岗位员工已经超编，不能添加！");
+		return false;
+		}
+		return true;
+}
+</script>
+</head>
+
+<body>
+<div id="man_zone">
+  <form action="sec.html" onsubmit="return link();" method="post" name="fom" id="fom" >
+    <div class="MainDiv">
+      <table width="97%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+        <tr>
+          <th class="tablestyle_title" ><div align="left">部门岗位调动页面</div></th>
+        </tr>
+        <tr>
+          <td class="CPanel"><table width="99%" border="0" align="center" cellpadding="4" cellspacing="1" bgcolor="#464646" class="newfont03">
+            <tr class="CTitle" >
+              <td height="22" colspan="16" align="center" style="font-size:16px">部门岗位调动报表</td>
+            </tr>
+            <tr bgcolor="#EEEEEE">
+              <td rowspan="4" align="center"><div align="center">
+                <p>调动员工</p>
+                <p>基本信息</p>
+              </div></td>
+              <td height="30"><div align="center" class="STYLE3">员工编号</div></td>
+              <td><div align="center" class="STYLE3">员工姓名</div></td>
+              <td><div align="center" class="STYLE3">性别</div></td>
+              <td><div align="center" class="STYLE3">出生日期</div></td>
+              <td width="70"><div align="center" class="STYLE3">政治面貌</div></td>
+              <td width="70"><div align="center" class="STYLE3">民族</div></td>
+              <td width="72"><div align="center" class="STYLE3">籍贯</div></td>
+              <td><div align="center" class="STYLE3">身份证号</div>                <div align="center" class="STYLE3"></div></td>
+              <td colspan="3">
+                <div align="center" class="STYLE3">婚姻状况</div></td>
+              <td width="56"><div align="center" class="STYLE3">身高</div></td>
+              <td width="102"><div align="center" class="STYLE3">血型</div></td>
+              <td colspan="2"><div align="center" class="STYLE3">联系电话</div></td>
+              </tr>
+            <tr bgcolor="#EEEEEE">
+              <td height="30"><div align="center" class="STYLE3">200912239980</div></td>
+              <td><div align="center" class="STYLE3">张三</div></td>
+              <td><div align="center" class="STYLE3">男</div></td>
+              <td><div align="center" class="STYLE3">1979.2.22</div></td>
+              <td><div align="center" class="STYLE3">党员</div></td>
+              <td><div align="center" class="STYLE3">汉</div></td>
+              <td><div align="center" class="STYLE3">辽宁</div></td>
+              <td><div align="center" class="STYLE3">330297176333927767</div>                <div align="center" class="STYLE3"></div></td>
+              <td colspan="3"><div align="center" class="STYLE3">已婚</div>                <div align="center" class="STYLE3"></div></td>
+              <td><div align="center" class="STYLE3">1.78</div></td>
+              <td><div align="center" class="STYLE3">O</div></td>
+              <td colspan="2"><div align="center" class="STYLE3">2098113323</div></td>
+              </tr>
+            <tr bgcolor="#EEEEEE">
+              <td><div align="center" class="STYLE3">出生地</div></td>
+              <td><div align="center" class="STYLE3">户口所在地</div></td>
+              <td><div align="center" class="STYLE3">最高学历</div></td>
+              <td><div align="center" class="STYLE3">最高学位</div></td>
+              <td colspan="3"><div align="center" class="STYLE3">毕业院校</div></td>
+              <td><div align="center" class="STYLE3">毕业专业</div></td>
+              <td colspan="4"><div align="center" class="STYLE3">所学专业</div></td>
+              <td><div align="center" class="STYLE3">毕业日期</div></td>
+              <td colspan="2"><div align="center" class="STYLE3">电子邮件</div></td>
+              </tr>
+            <tr bgcolor="#EEEEEE">
+              <td height="32"><div align="center" class="STYLE3">辽 宁</div></td>
+              <td><div align="center" class="STYLE3">天 津</div></td>
+              <td><div align="center" class="STYLE3">本 科</div></td>
+              <td><div align="center" class="STYLE3">学 士</div></td>
+              <td colspan="3"><div align="center" class="STYLE3">北京工业大学</div></td>
+              <td><div align="center" class="STYLE3">生物化学</div></td>
+              <td colspan="4"><div align="center" class="STYLE3">生物化学与质检</div></td>
+              <td><div align="center" class="STYLE3">99.7</div></td>
+              <td colspan="2"><div align="center" class="STYLE3">a@cnsjc.com</div></td>
+              </tr>
+            <tr bgcolor="#EEEEEE">
+              <td width="24" rowspan="2" align="center"><div align="center" class="STYLE3">调转信息</div>
+                </td>
+              <td width="96" height="30"><div align="center" class="STYLE3">原部门名称</div></td>
+              <td width="92"><div align="center" class="STYLE3">原部门编号</div></td>
+              <td width="70"><div align="center" class="STYLE3">原岗位名称</div></td>
+              <td width="72"><div align="center" class="STYLE3">原岗位编号</div></td>
+              <td><div align="center" class="STYLE3">新部门名称</div></td>
+              <td><div align="center" class="STYLE3">新部门编号</div></td>
+              <td><div align="center" class="STYLE3">新岗位名称</div></td>
+              <td width="144"><div align="center" class="STYLE3">新岗位编号</div></td>
+              <td colspan="4"><div align="center" class="STYLE3">调转类型</div>                <div align="center" class="STYLE3"></div></td>
+              <td colspan="2"><div align="center" class="STYLE3">调转日期</div></td>
+              <td><div align="center" class="STYLE3">备注</div></td>
+            </tr>
+            <tr bgcolor="#EEEEEE">
+              <td width="96" height="32" bgcolor="#FFFFFF" ><span class="STYLE3">
+                <label></label>              
+                <label>
+                <div align="center">
+                  <input name="textfield" type="text" size="10" />
+                </div>
+                </label>
+              </span></td>
+              <td bgcolor="#FFFFFF" ><div align="center" class="STYLE3"> 
+                <label>
+                <input name="textfield2" type="text" size="10" />
+                </label>
+              </div>                </td>
+              <td bgcolor="#FFFFFF"><span class="STYLE3">
+                <label></label>              
+                <label>
+                <input name="textfield22" type="text" size="10" />
+                </label>
+              </span></td>
+              <td bgcolor="#FFFFFF"><span class="STYLE3">
+                <label></label>              
+                <label>
+                <input name="textfield23" type="text" size="10" />
+                </label>
+              </span></td>
+              <td bgcolor="#FFFFFF"><span class="STYLE3">
+                <label></label>              
+                <label>
+                <input name="textfield24" type="text" size="10" />
+                </label>
+              </span></td>
+              <td bgcolor="#FFFFFF"><span class="STYLE3">
+                <label></label>              
+                <label>
+                <input name="textfield25" type="text" size="10" />
+                </label>
+              </span></td>
+              <td bgcolor="#FFFFFF"><span class="STYLE3">
+                <label></label>              
+                <label>
+                <input name="textfield26" type="text" size="10" />
+                </label>
+              </span></td>
+              <td bgcolor="#FFFFFF"><span class="STYLE3">
+                <label></label>              
+                <label>
+                <div align="center">
+                  <input name="newjobid" type="text" size="15" />
+                </div>
+                </label>
+              </span></td>
+              <td colspan="2" bgcolor="#FFFFFF"><div align="center" class="STYLE3">
+                <label>
+                <select name="select">
+                  <option value="主动">主动</option>
+                  <option value="被动">被动</option>
+                </select>
+                </label>
+              </div>
+                <div align="center" class="STYLE3">
+                  <label></label>
+                </div>                <div align="center" class="STYLE3"></div></td>
+              <td colspan="2" bgcolor="#FFFFFF"><span class="STYLE3">
+                <select name="select2">
+                  <option value="升职">升职</option>
+                  <option value="降职">降职</option>
+                  </select>
+              </span></td>
+              <td colspan="2" bgcolor="#FFFFFF"><div align="center" class="STYLE3">
+                <label></label>
+              </div></td>
+              <td width="121" bgcolor="#FFFFFF"><div align="center" class="STYLE3">
+                <label></label>
+              </div></td>
+            </tr>
+            
+          </table></td>
+        </tr>
+      </table>
+	  <br>
+      <div align="center">
+        <input type="reset" name="Submit" value="调转" />
+       &nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+<input type="reset" name="Submit2" value="取消" />
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>

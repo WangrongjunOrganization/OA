@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>人事管理系统</title>
+<link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+<script language="JavaScript" type="text/javascript">
+function tishi()
+{
+  var a=confirm('数据库中保存有该人员基本信息，您可以修改或保留该信息。');
+  if(a!=true)return false;
+  window.open("冲突页.htm","","depended=0,alwaysRaised=1,width=800,height=400,location=0,menubar=0,resizable=0,scrollbars=0,status=0,toolbar=0");
+}
+
+function check()
+{
+document.getElementById("aa").style.display="";
+}
+
+
+function link(){
+alert('保存成功！');
+    document.getElementById("fom").action="xuqiumingxi.htm";
+   document.getElementById("fom").submit();
+}
+
+
+
+</script>
+<style type="text/css">
+<!--
+.atten {font-size:12px;font-weight:normal;color:#F00;}
+-->
+</style>
+</head>
+
+<body class="ContentBody">
+  <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost" >
+<div class="MainDiv">
+<table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+  <tr>
+      <th class="tablestyle_title" >查询部门下属员工</th>
+  </tr>
+  <tr>
+    <td class="CPanel">
+		
+		<table width="100%" border="0" cellpadding="4" cellspacing="1" bgcolor="#464646" class="newfont03">
+				 <tr class="CTitle" >
+                    	<td height="22" colspan="10" align="center" style="font-size:16px">行 政 部 门 员 工 列 表 </td>
+                  </tr>
+                  <tr bgcolor="#EEEEEE">
+				    <td width="2%" align="center">&nbsp;</td>
+                    <td width="9%" height="30"><div align="center">部门编号</div></td>
+                    <td width="11%"><div align="center">部门名称</div></td>
+					<td width="7%">
+					  <div align="center">员工姓名</div></td>
+                    <td width="11%"><div align="center">员工编号</div></td>
+					<td width="9%"><div align="center">所在岗位</div></td>
+					
+					<td width="10%"><div align="center">职称</div></td>
+					<td width="13%"><div align="center">入职日期</div></td>
+					
+                  </tr>
+                  <tr bgcolor="#FFFFFF">
+                    <td width="2%" align="center">1</td>
+				    <td width="12" height="40" ><div align="center"> 2010001 </div></td>
+                    <td ><div align="center"> 行政部</div></td>
+					<td><div align="center"> 张三</div></td>
+                    <td><div align="center">201002569876</div></td>
+                    <td><div align="center">行政主管</div></td>
+                    
+                    <td><div align="center">
+                   无
+                    </div></td>
+                    <td><div align="center">1997-08
+                    </div></td>
+                   
+                  </tr>
+				   <tr bgcolor="#FFFFFF">
+                    <td width="2%" align="center">1</td>
+				    <td width="12" height="40" ><div align="center"> 2010001 </div></td>
+                    <td ><div align="center"> 行政部</div></td>
+					<td><div align="center"> 张三</div></td>
+                    <td><div align="center">201002569876</div></td>
+                    <td><div align="center">行政主管</div></td>
+                    
+                    <td><div align="center">
+                   无
+                    </div></td>
+                    <td><div align="center">1997-08
+                    </div></td>
+                   
+                  </tr>
+				   <tr bgcolor="#FFFFFF">
+                    <td width="2%" align="center">1</td>
+				    <td width="12" height="40" ><div align="center"> 2010001 </div></td>
+                    <td ><div align="center"> 行政部</div></td>
+					<td><div align="center"> 张三</div></td>
+                    <td><div align="center">201002569876</div></td>
+                    <td><div align="center">行政主管</div></td>
+                    
+                    <td><div align="center">
+                   无
+                    </div></td>
+                    <td><div align="center">1997-08
+                    </div></td>
+                   
+                  </tr>
+				   <tr bgcolor="#FFFFFF">
+                    <td width="2%" align="center">1</td>
+				    <td width="12" height="40" ><div align="center"> 2010001 </div></td>
+                    <td ><div align="center"> 行政部</div></td>
+					<td><div align="center"> 张三</div></td>
+                    <td><div align="center">201002569876</div></td>
+                    <td><div align="center">行政主管</div></td>
+                    
+                    <td><div align="center">
+                   无
+                    </div></td>
+                    <td><div align="center">1997-08
+                    </div></td>
+                   
+                  </tr>
+				   <tr bgcolor="#FFFFFF">
+                    <td width="2%" align="center">1</td>
+				    <td width="12" height="40" ><div align="center"> 2010001 </div></td>
+                    <td ><div align="center"> 行政部</div></td>
+					<td><div align="center"> 张三</div></td>
+                    <td><div align="center">201002569876</div></td>
+                    <td><div align="center">行政主管</div></td>
+                    
+                    <td><div align="center">
+                   无
+                    </div></td>
+                    <td><div align="center">1997-08
+                    </div></td>
+                   
+                  </tr>
+				  
+				  </table>
+  
+  
+  </table>
+
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<title>管理区域</title>
+<style type="text/css">
+<!--
+.STYLE3 {color: #000000}
+-->
+</style>
+<script language='javascript'>                                                                                           
+	function yanzheng(){                                                                                                  
+	
+	 for(var i=0;i< form1.deptid.value.length;i++){
+			var ch = form1.empid.value.charAt(i);
+			if(ch<"0" || ch>"9"){
+				alert("员工编号为数字");
+				return false;
+			}
+		}
+		if(document.form1.empid.value ==''&&document.form1.empname.value ==''&&document.form1.deptname.value ==''&&document.form1.deptname.value ==''&&document.form1.jobname.value ==''&&document.form1.leavetype.value ==''&&document.form1.etime.value ==''&&document.form1.stime.value =='' )           { alert("查询条件不能都为空");   
+	        return false;} 
+			return true;                                                                                                                                                       
+	}                                                                                                                    
+	                                                                                                                      
+                                                                                                                    
+</script>                   
+</head>
+
+<body>
+<div id="man_zone">
+<form id="form1" name="form1" method="post" action="information2.html" onsubmit="return yanzheng();">
+    <div class="MainDiv">
+      <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+        <tr>
+          <th class="tablestyle_title" ><div align="left">已离职员工信息查询</div></th>
+        </tr>
+        <tr>
+          <td class="CPanel"><table width="100%" border="0" cellpadding="4" cellspacing="1" bgcolor="#464646" class="newfont03">
+              <tr class="CTitle" >
+                <td height="22" align="center" style="font-size:16px">已离职员工信息查询</td>
+              </tr>
+              <tr bgcolor="#EEEEEE">
+                <td align="center"><br/>
+                  <table width="45%" border="0" align="center">
+                    <tr>
+                      <td colspan="2"><div align="left"><span class="STYLE3">请输入查询条件：（至少填写一项）</span></div></td>
+                    </tr>
+                    
+                    <tr>
+                      <td><div align="left"><span class="STYLE3">员工编号：</span></div></td>
+                      <td><div align="left">
+                        <input name="empid" type="text" onfocus="setday(this)" size="15" />
+                      </div>                        
+                      <div align="left"></div></td>
+                    </tr>
+                    <tr>
+                      <td height="49"><div align="left" class="STYLE3">员工姓名：</div></td>
+                      <td><div align="left">
+                          <label>
+                          <input name="empname" type="text" size="15" />
+                          </label>
+                        </div>
+                          </label></td>
+                    </tr>
+					<tr>
+                      <td height="49"><div align="left" class="STYLE3">部门名称：</div></td>
+                      <td><div align="left">
+                        <label>
+                        <input name="deptname" type="text" size="15" />
+                        </label>
+                      </div>
+                      </label></td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="49"><div align="left" class="STYLE3">岗位名称：</div></td>
+                      <td><div align="left">
+                        <label>
+                        <input name="jobname" type="text" size="15" />
+                        </label>
+                      </div>
+                      </label></td>
+                    </tr>
+					<tr>
+                      <td height="49"><div align="left" class="STYLE3">离职类型：</div></td>
+                      <td><div align="left">
+                        <label>
+                        <input name="leavetype" type="text" size="15" />
+                        </label>
+                      </div>
+                      </label></td>
+                    </tr><tr>
+                      <td height="49"><div align="left" class="STYLE3">开始时间：</div></td>
+                      <td><div align="left">
+                        <label>
+                        <input name="stime" type="text" size="15" />
+                        </label>
+                      </div>
+                      </label></td>
+                    </tr><tr>
+                      <td height="49"><div align="left" class="STYLE3">结束时间：</div></td>
+                      <td><div align="left">
+                        <label>
+                        <input name="etime" type="text" size="15" />
+                        </label>
+                      </div>
+                      </label></td>
+                    </tr>
+                    <tr>
+                      <td height="53"><div align="left"></div></td>
+                      <td><div align="left">
+  <input type="submit" name="Submit32" value="要离职员工查询" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="reset" name="Submit222" value="取消" />
+                      </div></td>
+                    </tr>
+                  </table>
+                <p>&nbsp;</p>                <div align="center">
+                  <label></label>
+                </div></td>
+              </tr>
+              
+          </table></td>
+        </tr>
+      </table>
+    </div>
+  </form>
+</div>
+</body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+</head>
+
+<body>
+</body>
+</html>
