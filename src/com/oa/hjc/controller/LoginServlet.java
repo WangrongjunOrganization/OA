@@ -3,15 +3,13 @@ package com.oa.hjc.controller;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.sql.SQLException;
-import java.util.Enumeration;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.oa.hjc.bean.manager;
+import com.oa.pub.bean.manager;
 import com.oa.hjc.service.UserService;
 import com.oa.hjc.service.UserServiceImpl;
 

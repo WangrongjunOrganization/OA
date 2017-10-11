@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.sql.Timestamp;
 
 import com.oa.hjc.bean.Skdept;
-import com.oa.hjc.bean.manager;
+import com.oa.pub.bean.manager;
 import com.oa.hjc.db.DataBase;
 
 

@@ -3,7 +3,7 @@ package com.oa.hjc.service;
 import java.sql.SQLException;
 
 import com.oa.hjc.bean.Skdept;
-import com.oa.hjc.bean.manager;
+import com.oa.pub.bean.manager;
 import com.oa.hjc.dao.UserDao;
 import com.oa.hjc.dao.UserDaoImpl;
 
