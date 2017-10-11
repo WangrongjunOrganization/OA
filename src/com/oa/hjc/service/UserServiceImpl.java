@@ -3,7 +3,7 @@ package com.oa.hjc.service;
 import com.oa.hjc.dao.UserDao;
 import com.oa.hjc.dao.UserDaoImpl;
 import com.oa.pub.bean.SkDept;
-import com.oa.pub.bean.manager;
+import com.oa.pub.bean.Manager;
 
 import java.sql.SQLException;
 
@@ -20,19 +20,19 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public int insert(manager u) throws SQLException {
+    public int insert(Manager u) throws SQLException {
         // TODO Auto-generated method stub
         return ud.insert(u);
     }
 
     @Override
-    public manager getUserByName(String name) throws SQLException {
+    public Manager getUserByName(String name) throws SQLException {
         // TODO Auto-generated method stub
         return ud.getUserByName(name);
     }
 
     @Override
-    public manager login(String name, String pass) throws SQLException {
+    public Manager login(String name, String pass) throws SQLException {
         // TODO Auto-generated method stub
         return ud.login(name, pass);
     }

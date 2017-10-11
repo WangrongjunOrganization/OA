@@ -2,7 +2,7 @@
 <%@ page import="java.text.*" %>
 
 
-<%@page import="com.oa.pub.bean.manager" %>
+<%@page import="com.oa.pub.bean.Manager" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -146,7 +146,7 @@
 <div id="left_content">
     <div id="user_info"><% String name = "";
         if (session.getAttribute("user") != null)
-            name = ((manager) session.getAttribute("user")).getName();
+            name = ((Manager) session.getAttribute("user")).getName();
     %>
         欢迎你,<%=name %>!<br/>
         <span class="STYLE2">

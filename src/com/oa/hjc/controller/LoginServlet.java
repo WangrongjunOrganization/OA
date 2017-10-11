@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.oa.pub.bean.manager;
+import com.oa.pub.bean.Manager;
 import com.oa.hjc.service.UserService;
 import com.oa.hjc.service.UserServiceImpl;
 
@@ -24,7 +24,7 @@ public class LoginServlet extends HttpServlet {
 		String pass=request.getParameter("pass");
 		UserService us=UserServiceImpl.getInstance();
 		try {
-			manager u=us.login(name, pass);
+			Manager u=us.login(name, pass);
 			if(u==null)
 			{
 				//登录失败

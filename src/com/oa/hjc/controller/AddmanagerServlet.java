@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-import com.oa.pub.bean.manager;
+import com.oa.pub.bean.Manager;
 import com.oa.hjc.service.UserService;
 import com.oa.hjc.service.UserServiceImpl;
 
@@ -42,7 +42,7 @@ public class AddmanagerServlet extends HttpServlet {
 		}*/
 		//把接收到的参数组装成一个userInfo对象
 		UserService us=UserServiceImpl.getInstance();
-		manager ui=new manager(name, pass,explanation1,explanation2,explanation3);
+		Manager ui=new Manager(name, pass,explanation1,explanation2,explanation3);
 		if(!ui.validate()){
 			//response.sendRedirect("../register.jsp");
 			response.getWriter().append(outText(ui.getValidateErrorMsg(),"/hjc/addmanager.jsp"));//响应dhtml文档

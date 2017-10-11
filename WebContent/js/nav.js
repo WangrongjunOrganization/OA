@@ -6,7 +6,7 @@ outlookbar.additem('部门添加',t,'hjc/adddept.jsp')
 outlookbar.additem('部门查询',t,'addselec.html')
 t=outlookbar.addtitle('岗位管理','组织管理',1)
 outlookbar.additem('岗位添加',t,'addjob.html')
-outlookbar.additem('岗位查询',t,'wrj/jobselec.html')
+outlookbar.additem('岗位查询',t,'wrj/jobselec.jsp')
 t=outlookbar.addtitle('设置关系','组织管理',1)
 outlookbar.additem('设置关系',t,'addjobdept_r.html')
 
