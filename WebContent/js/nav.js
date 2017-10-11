@@ -1,52 +1,52 @@
-// µ¼º½À¸ÅäÖÃÎÄ¼ş
+// å¯¼èˆªæ é…ç½®æ–‡ä»¶
 var outlookbar=new outlook();
 var t;
-t=outlookbar.addtitle('²¿ÃÅ¹ÜÀí','×éÖ¯¹ÜÀí',1)
-outlookbar.additem('²¿ÃÅÌí¼Ó',t,'adddept.html')
-outlookbar.additem('²¿ÃÅ²éÑ¯',t,'addselec.html')
-t=outlookbar.addtitle('¸ÚÎ»¹ÜÀí','×éÖ¯¹ÜÀí',1)
-outlookbar.additem('¸ÚÎ»Ìí¼Ó',t,'addjob.html')
-outlookbar.additem('¸ÚÎ»²éÑ¯',t,'jobselec.html')
-t=outlookbar.addtitle('ÉèÖÃ¹ØÏµ','×éÖ¯¹ÜÀí',1)
-outlookbar.additem('ÉèÖÃ¹ØÏµ',t,'addjobdept_r.html')
+t=outlookbar.addtitle('éƒ¨é—¨ç®¡ç†','ç»„ç»‡ç®¡ç†',1)
+outlookbar.additem('éƒ¨é—¨æ·»åŠ ',t,'hjc/adddept.jsp')
+outlookbar.additem('éƒ¨é—¨æŸ¥è¯¢',t,'addselec.html')
+t=outlookbar.addtitle('å²—ä½ç®¡ç†','ç»„ç»‡ç®¡ç†',1)
+outlookbar.additem('å²—ä½æ·»åŠ ',t,'addjob.html')
+outlookbar.additem('å²—ä½æŸ¥è¯¢',t,'jobselec.html')
+t=outlookbar.addtitle('è®¾ç½®å…³ç³»','ç»„ç»‡ç®¡ç†',1)
+outlookbar.additem('è®¾ç½®å…³ç³»',t,'addjobdept_r.html')
 
 
-t=outlookbar.addtitle('ÈëÖ°¹ÜÀí','ÈËÔ±¹ÜÀí',1)
-outlookbar.additem('ÊäÈëÔ±¹¤',t,'writeinfo.html')
-outlookbar.additem('²éÑ¯ÈË²Å¿â',t,'newempinsert.html')
-
-
-
-
-
-t=outlookbar.addtitle('ÊÔÓÃÆÚ¹ÜÀí','ÈËÔ±¹ÜÀí',1)
-outlookbar.additem('ÊÔÓÃÆÚÉó²é',t,'showselect.html')
-outlookbar.additem('ÒÑ×ªÕıÔ±¹¤²éÑ¯',t,'showselectzs.html')
-
-t=outlookbar.addtitle('ÀëÖ°¹ÜÀí','ÈËÔ±¹ÜÀí',1)
-outlookbar.additem('Ô±¹¤ÀëÖ°°ìÀí',t,'leavingselect.html')
-outlookbar.additem('ÒÑÀëÖ°Ô±¹¤²éÑ¯',t,'leavingse.html')
-
-
-t=outlookbar.addtitle('µ÷¶¯¹ÜÀí','µ÷¶¯¹ÜÀí',1)
-outlookbar.additem('²¿ÃÅ¸ÚÎ»µ÷¶¯',t,'movecheck.html')
-outlookbar.additem('ÒÑµ÷¶¯Ô±¹¤²éÑ¯',t,'sourchmeth.html')
-
-t=outlookbar.addtitle('Ô±¹¤ĞÅÏ¢ÖĞĞÄ','ĞÅÏ¢¹ÜÀí',1)
-outlookbar.additem('ÈË²Å¿â²éÑ¯',t,'DBselect.html')
-outlookbar.additem('ÈëÖ°Ô±¹¤²éÑ¯',t,'EMPDselect.html')
+t=outlookbar.addtitle('å…¥èŒç®¡ç†','äººå‘˜ç®¡ç†',1)
+outlookbar.additem('è¾“å…¥å‘˜å·¥',t,'writeinfo.html')
+outlookbar.additem('æŸ¥è¯¢äººæ‰åº“',t,'newempinsert.html')
 
 
 
-t=outlookbar.addtitle('±¨±í¹ÜÀí','±¨±í¹ÜÀí',1)
-outlookbar.additem('ĞÂÆ¸Ô±¹¤±¨±í',t,'selnewemp.html')
-outlookbar.additem('ÀëÖ°Ô±¹¤±¨±í',t,'selretireemp.html')
-outlookbar.additem('²¿ÃÅµ÷¶¯Ô±¹¤±¨±í',t,'selmodeptemp.html')
-outlookbar.additem('¸ÚÎ»µ÷¶¯Ô±¹¤±¨±í',t,'selmobmemp.html')
-outlookbar.additem('ÈËÊÂÔÂ±¨',t,'selmothlist.html')
 
-t=outlookbar.addtitle('ÏµÍ³¹ÜÀí','ÏµÍ³¹ÜÀí',1)
-outlookbar.additem('Ìí¼Ó¹ÜÀíÔ±',t,'addmanager.html')
-outlookbar.additem('²éÑ¯¹ÜÀíÔ±',t,'selectmanager.html')
 
-outlookbar.additem('ÍË³öµÇÂ¼',t,'out.html')
+t=outlookbar.addtitle('è¯•ç”¨æœŸç®¡ç†','äººå‘˜ç®¡ç†',1)
+outlookbar.additem('è¯•ç”¨æœŸå®¡æŸ¥',t,'showselect.html')
+outlookbar.additem('å·²è½¬æ­£å‘˜å·¥æŸ¥è¯¢',t,'showselectzs.html')
+
+t=outlookbar.addtitle('ç¦»èŒç®¡ç†','äººå‘˜ç®¡ç†',1)
+outlookbar.additem('å‘˜å·¥ç¦»èŒåŠç†',t,'leavingselect.html')
+outlookbar.additem('å·²ç¦»èŒå‘˜å·¥æŸ¥è¯¢',t,'leavingse.html')
+
+
+t=outlookbar.addtitle('è°ƒåŠ¨ç®¡ç†','è°ƒåŠ¨ç®¡ç†',1)
+outlookbar.additem('éƒ¨é—¨å²—ä½è°ƒåŠ¨',t,'movecheck.html')
+outlookbar.additem('å·²è°ƒåŠ¨å‘˜å·¥æŸ¥è¯¢',t,'sourchmeth.html')
+
+t=outlookbar.addtitle('å‘˜å·¥ä¿¡æ¯ä¸­å¿ƒ','ä¿¡æ¯ç®¡ç†',1)
+outlookbar.additem('äººæ‰åº“æŸ¥è¯¢',t,'DBselect.html')
+outlookbar.additem('å…¥èŒå‘˜å·¥æŸ¥è¯¢',t,'EMPDselect.html')
+
+
+
+t=outlookbar.addtitle('æŠ¥è¡¨ç®¡ç†','æŠ¥è¡¨ç®¡ç†',1)
+outlookbar.additem('æ–°è˜å‘˜å·¥æŠ¥è¡¨',t,'selnewemp.html')
+outlookbar.additem('ç¦»èŒå‘˜å·¥æŠ¥è¡¨',t,'selretireemp.html')
+outlookbar.additem('éƒ¨é—¨è°ƒåŠ¨å‘˜å·¥æŠ¥è¡¨',t,'selmodeptemp.html')
+outlookbar.additem('å²—ä½è°ƒåŠ¨å‘˜å·¥æŠ¥è¡¨',t,'selmobmemp.html')
+outlookbar.additem('äººäº‹æœˆæŠ¥',t,'selmothlist.html')
+
+t=outlookbar.addtitle('ç³»ç»Ÿç®¡ç†','ç³»ç»Ÿç®¡ç†',1)
+outlookbar.additem('æ·»åŠ ç®¡ç†å‘˜',t,'hjc/addmanager.jsp')
+outlookbar.additem('æŸ¥è¯¢ç®¡ç†å‘˜',t,'selectmanager.html')
+
+outlookbar.additem('é€€å‡ºç™»å½•',t,'out.html')
