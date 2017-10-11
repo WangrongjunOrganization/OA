@@ -12,7 +12,7 @@ import com.wangrg.java_lib.db3.db.SqliteDatabase;
 public class OADao<T> extends BaseDao<T> {
     public OADao() {
 //        super(new Config().setDb(new MysqlDatabase("oa")).setUsername("root").setPassword("21436587"));
-        super(new Config().setDb(new OracleDatabase("orcl")).setUsername("wang").setPassword("123"));
+        super(new Config().setDb(new OracleDatabase("orcl")).setUsername("wang").setPassword("123").setPrintLogHint(false));
 //        super(new Config().setDb(new SqliteDatabase("E:/oa.db")));
     }
 }
