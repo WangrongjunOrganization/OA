@@ -63,8 +63,6 @@ public class TestDao {
         jobDao.insert(经理);
         jobDao.insert(销售员);
 
-        new SkEmp()
-
         for (int i = 1; i <= 30; i++) {
             SkDept superDept = i % 2 == 0 ? 研发部 : 采购部;
             Date date = DateUtil.toDate("2017-04-" + (i < 10 ? "0" + i : i));
