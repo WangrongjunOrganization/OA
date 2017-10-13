@@ -1,6 +1,9 @@
-<%@ page import="com.wangrg.web_lib.bean.Pager" %>
+<%@ page import="com.oa.pub.bean.OccupationCareer" %>
+<%@ page import="com.oa.pub.bean.SkJob" %>
 <%@ page import="com.oa.wrj.dao.JobDao" %>
-<%@ page import="com.oa.pub.bean.SkJob" %><%--
+<%@ page import="com.oa.wrj.dao.OccupationCareerDao" %>
+<%@ page import="java.util.List" %>
+<%--
   Created by IntelliJ IDEA.
   User: wangrongjun
   Date: 2017/10/11
@@ -8,6 +11,9 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
@@ -56,10 +62,11 @@
 </head>
 
 <%
-    int jobId = Integer.parseInt(request.getParameter("jobId"));
-    JobDao jobDao = new JobDao();
-    SkJob job = jobDao.queryById(jobId);
-
+    final int jobId = Integer.parseInt(request.getParameter("jobId"));
+    SkJob job = new JobDao().queryById(jobId);
+    List<OccupationCareer> careerList = new OccupationCareerDao().queryByJobId(jobId, 0, 0);
+    request.setAttribute("job", job);
+    request.setAttribute("careerList", careerList);
 %>
 
 <body>
@@ -77,6 +84,7 @@
                                         <td width="538">岗位员工信息列表</td>
                                         <td width="144" align="left"><a href="#" onclick="sousuo()"></a></td>
                                     </tr>
+
                                 </table>
                             </td>
                         </tr>
@@ -133,185 +141,58 @@
                                                         <div align="center">人数总计</div>
                                                     </td>
                                                 </tr>
-                                                <tr bgcolor="#FFFFFF">
-                                                    <td height="20">
-                                                        <div align="center"> 1</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">2</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">行政主管</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 1</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">行政部</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 张三</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 64275088</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 64275080</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 13032173891</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 1997-08-06</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">5</div>
-                                                    </td>
-                                                </tr>
-                                                <tr bgcolor="#FFFFFF">
-                                                    <td height="20">
-                                                        <div align="center">2</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">2</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">行政主管</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 3</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">生产部</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">张三力</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 64275088</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 64275080</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 13032173891</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 1997-08-06</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">5</div>
-                                                    </td>
-                                                </tr>
-                                                <tr bgcolor="#FFFFFF">
-                                                    <td height="20">
-                                                        <div align="center">3</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">2</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">行政主管</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 3</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">生产部</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">张三</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 64275088</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 64275080</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 13032173891</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 1997-08-06</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">5</div>
-                                                    </td>
-                                                </tr>
-                                                <tr bgcolor="#FFFFFF">
-                                                    <td height="20">
-                                                        <div align="center">4</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">2</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">行政主管</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 4</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">销售部</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">张三</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 64275088</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 64275080</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 13032173891</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 1997-08-06</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">5</div>
-                                                    </td>
-                                                </tr>
-                                                <tr bgcolor="#FFFFFF">
-                                                    <td height="20">
-                                                        <div align="center">5</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">2</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">行政主管</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 5</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">技术部</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">张三</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 64275088</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 64275080</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 13032173891</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center"> 1997-08-06</div>
-                                                    </td>
-                                                    <td>
-                                                        <div align="center">5</div>
-                                                    </td>
-                                                </tr>
+                                                <%--SkEmp列表项 开始--%>
+                                                <c:forEach var="career" items="${careerList}" varStatus="status">
+                                                    <c:set var="emp" value="${career.emp}" scope="page"/>
+                                                    <tr bgcolor="#FFFFFF">
+                                                        <td height="20">
+                                                            <div align="center">${status.index+1}</div>
+                                                        </td>
+                                                        <td>
+                                                            <div align="center">${job.id}</div>
+                                                        </td>
+                                                        <td>
+                                                            <div align="center">${job.name}</div>
+                                                        </td>
+                                                        <td>
+                                                            <div align="center">${job.dept.id}</div>
+                                                        </td>
+                                                        <td>
+                                                            <div align="center">${job.dept.name}</div>
+                                                        </td>
+                                                        <td>
+                                                            <div align="center">${emp.name}</div>
+                                                        </td>
+                                                        <td>
+                                                            <div align="center">${emp.id}</div>
+                                                        </td>
+                                                        <td>
+                                                            <div align="center">${career.position}</div>
+                                                        </td>
+                                                        <td>
+                                                            <div align="center">${emp.tele}</div>
+                                                        </td>
+                                                        <td>
+                                                            <div align="center">
+                                                                <fmt:formatDate value="${career.beginTime}"
+                                                                                pattern="yyyy-MM-dd"/>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div align="center">${fn:length(careerList)}</div>
+                                                        </td>
+                                                    </tr>
+                                                </c:forEach>
+                                                <%--SkEmp列表项 结束--%>
                                             </table>
                                         </td>
                                     </tr>
                                 </table>
+                                <c:if test="${fn:length(careerList)==0}">
+                                    <br>
+                                    <div align="center">没有数据</div>
+                                    <br>
+                                </c:if>
                                 <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
                                     <tr>
                                         <td height="6"><img src="../images/spacer.gif" width="1" height="1"/></td>

@@ -108,17 +108,18 @@
 
     // 根据pager获取数据
     int pageSize = pager.getPageSize();
-    List<Job> jobList = jobDao.query(Query.build(null).limit(pageIndex * pageSize, pageSize));
+    List<Job> jobList = jobDao.query(Query.eq(null).limit(pageIndex * pageSize, pageSize));
     pager.setList(jobList);
 
     // 把pager设置进session
     session.setAttribute("pager", pager);
     */
 
-    Pager.setPager(request, session, new Pager.OnQueryListener<SkJob>() {
+    int PAGE_SIZE = 10;
+    Pager.setPager(PAGE_SIZE, request, session, new Pager.OnQueryListener<SkJob>() {
         @Override
         public List<SkJob> queryList(int offset, int rowCount) {
-            return new JobDao().query(Query.build(null).limit(offset, rowCount));
+            return new JobDao().query(Query.where(null).limit(offset, rowCount));
         }
 
         @Override
@@ -204,8 +205,7 @@
                                                         <div align="center">操作</div>
                                                     </td>
                                                 </tr>
-                                                <%--TODO--%>
-                                                <%--列表数据开始--%>
+                                                <%--SkJob列表 开始--%>
                                                 <c:if test="${fn:length(pager.list)==0}">
                                                     <div align="center">没有数据</div>
                                                 </c:if>
@@ -218,15 +218,13 @@
                                                                 </div>
                                                             </td>
                                                             <td height="20">
-                                                                <div align="center">${status.index}</div>
+                                                                <div align="center">${status.index+1}</div>
                                                             </td>
                                                             <td>
                                                                 <div align="center">${job.id}</div>
                                                             </td>
                                                             <td>
-                                                                <div align="center"><a href="listmokuaimingxi.htm"
-                                                                                       onclick="">${job.name}</a>
-                                                                </div>
+                                                                <div align="center">${job.name}</div>
                                                             </td>
                                                             <td>
                                                                 <div align="center">${job.jobType.attrName}</div>
@@ -245,14 +243,14 @@
                                                             </td>
                                                             <td>
                                                                 <div align="center"><a href="jobmod.jsp">编辑 </a>| <a
-                                                                        href="../deljob.html">删除</a> | <a
+                                                                        href="deljob.jsp?jobId=${job.id}">删除</a> | <a
                                                                         href="jobemplist.jsp?jobId=${job.id}">查询岗位下员工</a>
                                                                 </div>
                                                             </td>
                                                         </tr>
                                                     </c:forEach>
                                                 </c:if>
-                                                <%--列表数据结束--%>
+                                                <%--SkJob列表 结束--%>
                                             </table>
                                         </td>
                                     </tr>

@@ -1,5 +1,6 @@
 package com.oa.pub.bean;
 
+import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
@@ -12,6 +13,7 @@ public class SkJob {
     @Id
     @GeneratedValue
     private int id;// 岗位编号
+    @Column(unique = true)
     private String name;// 岗位名称
     @ManyToOne
     private MaTable jobType;// 岗位类型（分为管理，技术，营销,市场等）

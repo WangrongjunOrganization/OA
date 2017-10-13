@@ -1,6 +1,5 @@
 package com.oa.pub.bean;
 
-import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
@@ -18,6 +17,10 @@ public class MaTable {
     private int attrValue;// 属性值，如1，2，3
 
     public MaTable() {
+    }
+
+    public MaTable(int id) {
+        this.id = id;
     }
 
     public MaTable(String name, String attrName, int attrValue) {

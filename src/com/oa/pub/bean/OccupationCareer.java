@@ -1,5 +1,8 @@
 package com.oa.pub.bean;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.util.Date;
 
 /**
@@ -7,10 +10,15 @@ import java.util.Date;
  */
 public class OccupationCareer {// 职业生涯信息
 
-    private int empno;// 员工编号
+    @Id
+    @GeneratedValue
+    private int id;// 主键id
+    @ManyToOne
+    private SkEmp emp;// 员工
     private Date beginTime;// 起始年月
-    private Date endTime;// 截至年月（默认值是至今）
-    private SkJob job;// 所在单位
+    private Date endTime;// 截至年月（如果为空，则代表正在该岗位工作）
+    @ManyToOne
+    private SkJob job;// 所在岗位
     private String jobDiscrip;// 从事工作内容
     private String position;// 担任职务
     private double salary;// 年薪/月薪
@@ -24,19 +32,28 @@ public class OccupationCareer {// 职业生涯信息
     public OccupationCareer() {
     }
 
-    public OccupationCareer(Date beginTime, Date endTime, SkJob job, double salary) {
+    public OccupationCareer(SkEmp emp, Date beginTime, Date endTime, SkJob job, double salary) {
+        this.emp = emp;
         this.beginTime = beginTime;
         this.endTime = endTime;
         this.job = job;
         this.salary = salary;
     }
 
-    public int getEmpno() {
-        return empno;
+    public int getId() {
+        return id;
     }
 
-    public void setEmpno(int empno) {
-        this.empno = empno;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public SkEmp getEmp() {
+        return emp;
+    }
+
+    public void setEmp(SkEmp emp) {
+        this.emp = emp;
     }
 
     public Date getBeginTime() {

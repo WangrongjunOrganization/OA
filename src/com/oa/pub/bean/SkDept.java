@@ -6,8 +6,10 @@ import com.oa.hjc.service.UserServiceImpl;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import java.sql.SQLException;
 import java.util.Date;
+import java.util.List;
 
 /**
  * by wangrongjun on 2017/10/9.
@@ -28,6 +30,8 @@ public class SkDept {
     private String explanation1;// 备注1
     private String explanation2;// 备注2
     private String explanation3;// 备注3
+    @OneToMany
+    private List<SkJob> jobList;
 
     public SkDept() {
     }
@@ -197,5 +201,13 @@ public class SkDept {
 
     public void setExplanation3(String explanation3) {
         this.explanation3 = explanation3;
+    }
+
+    public List<SkJob> getJobList() {
+        return jobList;
+    }
+
+    public void setJobList(List<SkJob> jobList) {
+        this.jobList = jobList;
     }
 }

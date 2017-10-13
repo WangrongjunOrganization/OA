@@ -5,10 +5,10 @@ t=outlookbar.addtitle('部门管理','组织管理',1)
 outlookbar.additem('部门添加',t,'hjc/adddept.jsp')
 outlookbar.additem('部门查询',t,'addselec.html')
 t=outlookbar.addtitle('岗位管理','组织管理',1)
-outlookbar.additem('岗位添加',t,'addjob.html')
+outlookbar.additem('岗位添加',t,'wrj/addjob.jsp')
 outlookbar.additem('岗位查询',t,'wrj/jobselec.jsp')
 t=outlookbar.addtitle('设置关系','组织管理',1)
-outlookbar.additem('设置关系',t,'addjobdept_r.html')
+outlookbar.additem('设置关系',t,'wrj/setjobdept_r.jsp')
 
 
 t=outlookbar.addtitle('入职管理','人员管理',1)

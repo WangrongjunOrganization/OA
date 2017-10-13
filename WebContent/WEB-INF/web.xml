@@ -8,6 +8,19 @@
     </welcome-file-list>
 
     <servlet>
+        <servlet-name>Controller</servlet-name>
+        <servlet-class>com.wangrg.web_lib.framework.Controller</servlet-class>
+        <init-param>
+            <param-name>actionPackageName</param-name>
+            <param-value>com.oa.wrj.action</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>*.action</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>addmanager</servlet-name>
         <servlet-class>com.oa.hjc.controller.AddmanagerServlet</servlet-class>
     </servlet>
