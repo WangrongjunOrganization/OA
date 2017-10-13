@@ -42,7 +42,6 @@
                 <tr>
                     <th class="tablestyle_title">
                         <div align="left">设置岗位与部门关系的页面</div>
-                        <button align="left" onclick="location.href='wrj/seljobdept_r.jsp'">刷新</button>
                     </th>
                 </tr>
                 <tr>
@@ -97,10 +96,12 @@
                                 <td>
                                     <div align="center">
                                         <label>
-                                            <input name="Submit" type="button" onclick="addR()" value="添加岗位">
+                                            <input id="btnAdd" name="Submit" type="button" onclick="addR()"
+                                                   value="添加岗位">
                                         </label>
                                         <label>
-                                            <input name="Submit" type="button" onclick="removeR()" value="移除岗位">
+                                            <input id="btnRemove" name="Submit" type="button" onclick="removeR()"
+                                                   value="移除岗位">
                                         </label>
                                     </div>
                                 </td>
@@ -161,6 +162,7 @@
 </script>
 <script>
     function addR() {
+        var deptName = $("#dept option:selected").text();
         var jobName = $("#job option:selected").text();
         if (jobName.endsWith("（已存在）")) {
             alert("岗位已存在，无法执行添加操作！");
@@ -168,17 +170,70 @@
         }
         var deptId = $("#dept option:selected").val();
         var jobId = $("#job option:selected").val();
-        location.href = "setJobDeptR.action?action=add&jobId=" + jobId + "&deptId=" + deptId;
+        var url = "setJobDeptR.action?action=add&jobId=" + jobId + "&deptId=" + deptId;
+
+        changeBtn("add");
+        $.get(url, function (result) {
+            changeBtn("reset");
+            map.forEach(function (jobIdList, deptId) {// 删除岗位欧操作前从属的记录
+                for (var i = 0; i < jobIdList.length; i++) {
+                    if (jobIdList[i] == jobId) {
+                        delete jobIdList[i];
+                        break;
+                    }
+                }
+            });
+            var jobIdList = map.get(deptId);
+            jobIdList[jobIdList.length] = jobId;// 添加岗位操作后从属的记录
+            alert("从岗位" + jobName + "添加到部门" + deptName + (result == "true" ? "成功" : "失败"));
+            changeDept(deptId);// 刷新job的select元素
+        });
     }
+
     function removeR() {
+        var deptName = $("#dept option:selected").text();
         var jobName = $("#job option:selected").text();
         if (!jobName.endsWith("（已存在）")) {
             alert("岗位不存在，无法执行移除操作！");
             return;
         }
+        var deptId = $("#dept option:selected").val();
         var jobId = $("#job option:selected").val();
-        location.href = "setJobDeptR.action?action=remove&jobId=" + jobId;
+        var url = "setJobDeptR.action?action=remove&jobId=" + jobId;
+
+        changeBtn("add");
+        $.get(url, function (result) {
+            changeBtn("reset");
+            map.forEach(function (jobIdList, deptId) {// 删除岗位欧操作后从属的记录
+                for (var i = 0; i < jobIdList.length; i++) {
+                    if (jobIdList[i] == jobId) {
+                        delete jobIdList[i];
+                        break;
+                    }
+                }
+            });
+            alert("从部门" + deptName + "移除岗位" + jobName + (result == "true" ? "成功" : "失败"));
+            changeDept(deptId);// 刷新job的select元素
+        });
     }
+
+    function changeBtn(action) {
+        if (action == "reset") {
+            $("#btnAdd").attr("disabled", null);
+            $("#btnRemove").attr("disabled", null);
+            $("#btnAdd").text("添加岗位");
+            $("#btnRemove").text("移除岗位");
+        } else if (action == "add") {
+            $("#btnAdd").attr("disabled", "true");
+            $("#btnRemove").attr("disabled", "true");
+            $("#btnAdd").text("正在添加岗位...");
+        } else if (action == "remove") {
+            $("#btnAdd").attr("disabled", "true");
+            $("#btnRemove").attr("disabled", "true");
+            $("#btnRemove").text("正在移除岗位...");
+        }
+    }
+
 </script>
 
 </body>
