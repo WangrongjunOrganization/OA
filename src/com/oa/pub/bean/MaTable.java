@@ -12,9 +12,10 @@ public class MaTable {
     @Id
     @GeneratedValue
     private int id;
-    private String name;// 类型名，如颜色
-    private String attrName;// 属性名，如白色，黑色
-    private int attrValue;// 属性值，如1，2，3
+    private int typeId;// 类型id
+    private String typeName;// 类型名，如颜色
+    private String valueName;// 属性名，如白色，黑色
+    private int value;// 属性值，如1，2，3
 
     public MaTable() {
     }
@@ -23,10 +24,11 @@ public class MaTable {
         this.id = id;
     }
 
-    public MaTable(String name, String attrName, int attrValue) {
-        this.name = name;
-        this.attrName = attrName;
-        this.attrValue = attrValue;
+    public MaTable(int typeId, String typeName, String valueName, int value) {
+        this.typeId = typeId;
+        this.typeName = typeName;
+        this.valueName = valueName;
+        this.value = value;
     }
 
     public int getId() {
@@ -37,27 +39,35 @@ public class MaTable {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTypeName() {
+        return typeName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTypeName(String typeName) {
+        this.typeName = typeName;
     }
 
-    public String getAttrName() {
-        return attrName;
+    public String getValueName() {
+        return valueName;
     }
 
-    public void setAttrName(String attrName) {
-        this.attrName = attrName;
+    public void setValueName(String valueName) {
+        this.valueName = valueName;
     }
 
-    public int getAttrValue() {
-        return attrValue;
+    public int getValue() {
+        return value;
     }
 
-    public void setAttrValue(int attrValue) {
-        this.attrValue = attrValue;
+    public void setValue(int value) {
+        this.value = value;
+    }
+
+    public int getTypeId() {
+        return typeId;
+    }
+
+    public void setTypeId(int typeId) {
+        this.typeId = typeId;
     }
 }

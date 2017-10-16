@@ -111,7 +111,7 @@
                 <td>
                     <div align="center">
                         <label></label>
-                        ${job.jobType.attrName}
+                        ${job.jobType.valueName}
                     </div>
                 </td>
                 <td>

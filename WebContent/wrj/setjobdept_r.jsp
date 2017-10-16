@@ -21,7 +21,7 @@
 %>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="../css/common.css" type="text/css"/>
     <title>管理区域</title>
     <style type="text/css">

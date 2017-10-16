@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/common.css" type="text/css" />
-<title>¹ÜÀíÇøÓò</title>
+<title>ç®¡ç†åŒºåŸŸ</title>
 <style type="text/css">
 <!--
 .STYLE3 {font-size: 10; }
@@ -17,21 +17,21 @@ document.writeln('<span id=tmpSelectMonthLayer style="z-index: 9999;position: ab
 document.writeln('<table border=0 cellspacing=1 cellpadding=0 width=142 height=160 bgcolor=#000000 onselectstart="return false">');
 document.writeln(' <tr><td width=142 height=23 bgcolor=#FFFFFF><table border=0 cellspacing=1 cellpadding=0 width=140 height=23>');
 document.writeln('      <tr align=center><td width=20 align=center bgcolor=#808080 style="font-size:12px;cursor: hand;color: #FFD700" ');
-document.writeln('        onclick="meizzPrevM()" title="Ç°Ò»ÔÂ" Author=meizz><b Author=meizz>&lt;</b>');
+document.writeln('        onclick="meizzPrevM()" title="å‰ä¸€æœˆ" Author=meizz><b Author=meizz>&lt;</b>');
 document.writeln('        </td><td width=100 align=center style="font-size:12px;cursor:default" Author=meizz>');
 
-document.writeln('        <span Author=meizz id=meizzYearHead onmouseover="style.backgroundColor=\'yellow\'" onmouseout="style.backgroundColor=\'white\'" title="µã»÷ÕâÀïÑ¡ÔñÄê·İ" onclick="tmpSelectYearInnerHTML(this.innerText)" style="cursor: hand;"></span>&nbsp;Äê&nbsp;<span');
-document.writeln('         id=meizzMonthHead Author=meizz onmouseover="style.backgroundColor=\'yellow\'" onmouseout="style.backgroundColor=\'white\'" title="µã»÷ÕâÀïÑ¡ÔñÔÂ·İ" onclick="tmpSelectMonthInnerHTML(this.innerText)" style="cursor: hand;"></span>&nbsp;ÔÂ</td>');
+document.writeln('        <span Author=meizz id=meizzYearHead onmouseover="style.backgroundColor=\'yellow\'" onmouseout="style.backgroundColor=\'white\'" title="ç‚¹å‡»è¿™é‡Œé€‰æ‹©å¹´ä»½" onclick="tmpSelectYearInnerHTML(this.innerText)" style="cursor: hand;"></span>&nbsp;å¹´&nbsp;<span');
+document.writeln('         id=meizzMonthHead Author=meizz onmouseover="style.backgroundColor=\'yellow\'" onmouseout="style.backgroundColor=\'white\'" title="ç‚¹å‡»è¿™é‡Œé€‰æ‹©æœˆä»½" onclick="tmpSelectMonthInnerHTML(this.innerText)" style="cursor: hand;"></span>&nbsp;æœˆ</td>');
 
 document.writeln('        <td width=20 bgcolor=#808080 align=center style="font-size:12px;cursor: hand;color: #FFD700" ');
-document.writeln('         onclick="meizzNextM()" title="ºóÒ»ÔÂ" Author=meizz><b Author=meizz>&gt;</b></td></tr>');
+document.writeln('         onclick="meizzNextM()" title="åä¸€æœˆ" Author=meizz><b Author=meizz>&gt;</b></td></tr>');
 document.writeln('    </table></td></tr>');
 document.writeln(' <tr><td width=142 height=18 bgcolor=#808080>');
 document.writeln('<table border=0 cellspacing=0 cellpadding=0 width=140 height=1 style="cursor:default">');
-document.writeln('<tr align=center><td style="font-size:12px;color:#FFFFFF" Author=meizz>ÈÕ</td>');
-document.writeln('<td style="font-size:12px;color:#FFFFFF" Author=meizz class="td1">Ò»</td><td style="font-size:12px;color:#FFFFFF" Author=meizz>¶ş</td>');
-document.writeln('<td style="font-size:12px;color:#FFFFFF" Author=meizz>Èı</td><td style="font-size:12px;color:#FFFFFF" Author=meizz>ËÄ</td>');
-document.writeln('<td style="font-size:12px;color:#FFFFFF" Author=meizz>Îå</td><td style="font-size:12px;color:#FFFFFF" Author=meizz>Áù</td></tr>');
+document.writeln('<tr align=center><td style="font-size:12px;color:#FFFFFF" Author=meizz>æ—¥</td>');
+document.writeln('<td style="font-size:12px;color:#FFFFFF" Author=meizz class="td1">ä¸€</td><td style="font-size:12px;color:#FFFFFF" Author=meizz>äºŒ</td>');
+document.writeln('<td style="font-size:12px;color:#FFFFFF" Author=meizz>ä¸‰</td><td style="font-size:12px;color:#FFFFFF" Author=meizz>å››</td>');
+document.writeln('<td style="font-size:12px;color:#FFFFFF" Author=meizz>äº”</td><td style="font-size:12px;color:#FFFFFF" Author=meizz>å…­</td></tr>');
 document.writeln('</table></td></tr><!-- Author:F.R.Huang(meizz) http://www.meizz.com/ mail: meizz@hzcnc.com 2002-10-8 -->');
 document.writeln(' <tr><td width=142 height=120>');
 document.writeln('    <table border=0 cellspacing=1 cellpadding=0 width=140 height=120 bgcolor=#FFFFFF>');
@@ -42,31 +42,31 @@ document.writeln('      <tr align=center><td width=20 height=20 style="font-size
 document.writeln('         onclick=meizzDayClick(this.innerText)></td>');
 document.writeln('        <td width=20 height=20 style="font-size:12px" id=meizzDay36 Author=meizz onclick=meizzDayClick(this.innerText)></td>');
 document.writeln('        <td colspan=5 align=right Author=meizz><span onclick=closeLayer() style="font-size:12px;cursor: hand"');
-document.writeln('         Author=meizz title="·µ»Ø£¨²»Ñ¡ÔñÈÕÆÚ£©"><u>¹Ø±Õ</u></span>&nbsp;</td></tr>');
+document.writeln('         Author=meizz title="è¿”å›ï¼ˆä¸é€‰æ‹©æ—¥æœŸï¼‰"><u>å…³é—­</u></span>&nbsp;</td></tr>');
 document.writeln('    </table></td></tr><tr><td>');
 document.writeln('        <table border=0 cellspacing=1 cellpadding=0 width=100% bgcolor=#FFFFFF>');
-document.writeln('          <tr><td Author=meizz align=left><input Author=meizz type=button value="<<" title="Ç°Ò»Äê" onclick="meizzPrevY()" ');
-document.writeln('             onfocus="this.blur()" style=" cursor: hand;BACKGROUND-COLOR: #808080;BORDER-BOTTOM: #808080 1px outset; BORDER-LEFT: #808080 1px outset; BORDER-RIGHT: #808080 1px outset; BORDER-TOP: #808080 1px outset; FONT-SIZE: 12px; height: 20px;color: #FFD700; font-weight: bold"><input Author=meizz title="Ç°Ò»ÔÂ" type=button ');
+document.writeln('          <tr><td Author=meizz align=left><input Author=meizz type=button value="<<" title="å‰ä¸€å¹´" onclick="meizzPrevY()" ');
+document.writeln('             onfocus="this.blur()" style=" cursor: hand;BACKGROUND-COLOR: #808080;BORDER-BOTTOM: #808080 1px outset; BORDER-LEFT: #808080 1px outset; BORDER-RIGHT: #808080 1px outset; BORDER-TOP: #808080 1px outset; FONT-SIZE: 12px; height: 20px;color: #FFD700; font-weight: bold"><input Author=meizz title="å‰ä¸€æœˆ" type=button ');
 document.writeln('             value="<" onclick="meizzPrevM()" onfocus="this.blur()" style="cursor: hand;BACKGROUND-COLOR: #808080;BORDER-BOTTOM: #808080 1px outset; BORDER-LEFT: #808080 1px outset; BORDER-RIGHT: #808080 1px outset; BORDER-TOP: #808080 1px outset;font-size: 12px; height: 20px;color: #FFD700; font-weight: bold"></td><td ');
-document.writeln('             Author=meizz align=center><input Author=meizz type=button value="ÖØÖÃ" onclick="meizzToday()" ');
-document.writeln('             onfocus="this.blur()" title="ÏÔÊ¾µ±Ç°Ê±¼ä" style="cursor: hand;BACKGROUND-COLOR: #808080;BORDER-BOTTOM: #808080 1px outset; BORDER-LEFT: #808080 1px outset; BORDER-RIGHT: #808080 1px outset; BORDER-TOP: #808080 1px outset;font-size: 12px; height: 20px;color: #FFFFFF; font-weight: bold"></td><td ');
+document.writeln('             Author=meizz align=center><input Author=meizz type=button value="é‡ç½®" onclick="meizzToday()" ');
+document.writeln('             onfocus="this.blur()" title="æ˜¾ç¤ºå½“å‰æ—¶é—´" style="cursor: hand;BACKGROUND-COLOR: #808080;BORDER-BOTTOM: #808080 1px outset; BORDER-LEFT: #808080 1px outset; BORDER-RIGHT: #808080 1px outset; BORDER-TOP: #808080 1px outset;font-size: 12px; height: 20px;color: #FFFFFF; font-weight: bold"></td><td ');
 document.writeln('             Author=meizz align=right><input Author=meizz type=button value=">" onclick="meizzNextM()" ');
-document.writeln('             onfocus="this.blur()" title="ºóÒ»ÔÂ" style="cursor: hand;BACKGROUND-COLOR: #808080;BORDER-BOTTOM: #808080 1px outset; BORDER-LEFT: #808080 1px outset; BORDER-RIGHT: #808080 1px outset; BORDER-TOP: #808080 1px outset;font-size: 12px; height: 20px;color: #FFD700; font-weight: bold"><input ');
-document.writeln('             Author=meizz type=button value=" >>" title="ºóÒ»Äê" onclick="meizzNextY()"');
+document.writeln('             onfocus="this.blur()" title="åä¸€æœˆ" style="cursor: hand;BACKGROUND-COLOR: #808080;BORDER-BOTTOM: #808080 1px outset; BORDER-LEFT: #808080 1px outset; BORDER-RIGHT: #808080 1px outset; BORDER-TOP: #808080 1px outset;font-size: 12px; height: 20px;color: #FFD700; font-weight: bold"><input ');
+document.writeln('             Author=meizz type=button value=" >>" title="åä¸€å¹´" onclick="meizzNextY()"');
 document.writeln('             onfocus="this.blur()" style="cursor: hand;BACKGROUND-COLOR: #808080;BORDER-BOTTOM: #808080 1px outset; BORDER-LEFT: #808080 1px outset; BORDER-RIGHT: #808080 1px outset; BORDER-TOP: #808080 1px outset;font-size: 12px; height: 20px;color: #FFD700; font-weight: bold"></td>');
 document.writeln('</tr></table></td></tr></table></div>');
 
 
 var outObject;
-function setday(tt,obj) //Ö÷µ÷º¯Êı
+function setday(tt,obj) //ä¸»è°ƒå‡½æ•°
 {
-if (arguments.length > 2){alert("¶Ô²»Æğ£¡´«Èë±¾¿Ø¼şµÄ²ÎÊıÌ«¶à£¡");return;}
-if (arguments.length == 0){alert("¶Ô²»Æğ£¡ÄúÃ»ÓĞ´«»Ø±¾¿Ø¼şÈÎºÎ²ÎÊı£¡");return;}
+if (arguments.length > 2){alert("å¯¹ä¸èµ·ï¼ä¼ å…¥æœ¬æ§ä»¶çš„å‚æ•°å¤ªå¤šï¼");return;}
+if (arguments.length == 0){alert("å¯¹ä¸èµ·ï¼æ‚¨æ²¡æœ‰ä¼ å›æœ¬æ§ä»¶ä»»ä½•å‚æ•°ï¼");return;}
 var dads = document.all.meizzDateLayer.style;var th = tt;
-var ttop = tt.offsetTop;     //TT¿Ø¼şµÄ¶¨Î»µã¸ß
-var thei = tt.clientHeight; //TT¿Ø¼ş±¾ÉíµÄ¸ß
-var tleft = tt.offsetLeft;    //TT¿Ø¼şµÄ¶¨Î»µã¿í
-var ttyp = tt.type;          //TT¿Ø¼şµÄÀàĞÍ
+var ttop = tt.offsetTop;     //TTæ§ä»¶çš„å®šä½ç‚¹é«˜
+var thei = tt.clientHeight; //TTæ§ä»¶æœ¬èº«çš„é«˜
+var tleft = tt.offsetLeft;    //TTæ§ä»¶çš„å®šä½ç‚¹å®½
+var ttyp = tt.type;          //TTæ§ä»¶çš„ç±»å‹
 while (tt = tt.offsetParent){ttop+=tt.offsetTop; tleft+=tt.offsetLeft;}
 dads.top = (ttyp=="image")? ttop+thei : ttop+thei+6;
 dads.left = tleft;
@@ -75,15 +75,15 @@ dads.display = '';
 event.returnValue=false;
 }
 
-var MonHead = new Array(12);         //¶¨ÒåÑôÀúÖĞÃ¿¸öÔÂµÄ×î´óÌìÊı
+var MonHead = new Array(12);         //å®šä¹‰é˜³å†ä¸­æ¯ä¸ªæœˆçš„æœ€å¤§å¤©æ•°
     MonHead[0] = 31; MonHead[1] = 28; MonHead[2] = 31; MonHead[3] = 30; MonHead[4] = 31; MonHead[5] = 30;
     MonHead[6] = 31; MonHead[7] = 31; MonHead[8] = 30; MonHead[9] = 31; MonHead[10] = 30; MonHead[11] = 31;
 
-var meizzTheYear=new Date().getFullYear(); //¶¨ÒåÄêµÄ±äÁ¿µÄ³õÊ¼Öµ
-var meizzTheMonth=new Date().getMonth()+1; //¶¨ÒåÔÂµÄ±äÁ¿µÄ³õÊ¼Öµ
-var meizzWDay=new Array(37);               //¶¨ÒåĞ´ÈÕÆÚµÄÊı×é
+var meizzTheYear=new Date().getFullYear(); //å®šä¹‰å¹´çš„å˜é‡çš„åˆå§‹å€¼
+var meizzTheMonth=new Date().getMonth()+1; //å®šä¹‰æœˆçš„å˜é‡çš„åˆå§‹å€¼
+var meizzWDay=new Array(37);               //å®šä¹‰å†™æ—¥æœŸçš„æ•°ç»„
 
-function document.onclick() //ÈÎÒâµã»÷Ê±¹Ø±Õ¸Ã¿Ø¼ş
+function document.onclick() //ä»»æ„ç‚¹å‡»æ—¶å…³é—­è¯¥æ§ä»¶
 { 
 with(window.event.srcElement)
 { if (tagName != "INPUT" && getAttribute("Author")==null)
@@ -91,16 +91,16 @@ with(window.event.srcElement)
 }
 }
 
-function meizzWriteHead(yy,mm) //Íù head ÖĞĞ´Èëµ±Ç°µÄÄêÓëÔÂ
+function meizzWriteHead(yy,mm) //å¾€ head ä¸­å†™å…¥å½“å‰çš„å¹´ä¸æœˆ
 { document.all.meizzYearHead.innerText = yy;
     document.all.meizzMonthHead.innerText = mm;
 }
 
-function tmpSelectYearInnerHTML(strYear) //Äê·İµÄÏÂÀ­¿ò
+function tmpSelectYearInnerHTML(strYear) //å¹´ä»½çš„ä¸‹æ‹‰æ¡†
 {
-if (strYear.match(/\D/)!=null){alert("Äê·İÊäÈë²ÎÊı²»ÊÇÊı×Ö£¡");return;}
+if (strYear.match(/\D/)!=null){alert("å¹´ä»½è¾“å…¥å‚æ•°ä¸æ˜¯æ•°å­—ï¼");return;}
 var m = (strYear) ? strYear : new Date().getFullYear();
-if (m < 1000 || m > 9999) {alert("Äê·İÖµ²»ÔÚ 1000 µ½ 9999 Ö®¼ä£¡");return;}
+if (m < 1000 || m > 9999) {alert("å¹´ä»½å€¼ä¸åœ¨ 1000 åˆ° 9999 ä¹‹é—´ï¼");return;}
 var n = m - 10;
 if (n < 1000) n = 1000;
 if (n + 26 > 9999) n = 9974;
@@ -112,8 +112,8 @@ var selectInnerHTML = s;
 for (var i = n; i < n + 26; i++)
 {
     if (i == m)
-       {selectInnerHTML += "<option value='" + i + "' selected>" + i + "Äê" + "</option>\r\n";}
-    else {selectInnerHTML += "<option value='" + i + "'>" + i + "Äê" + "</option>\r\n";}
+       {selectInnerHTML += "<option value='" + i + "' selected>" + i + "å¹´" + "</option>\r\n";}
+    else {selectInnerHTML += "<option value='" + i + "'>" + i + "å¹´" + "</option>\r\n";}
 }
 selectInnerHTML += "</select>";
 document.all.tmpSelectYearLayer.style.display="";
@@ -121,9 +121,9 @@ document.all.tmpSelectYearLayer.innerHTML = selectInnerHTML;
 document.all.tmpSelectYear.focus();
 }
 
-function tmpSelectMonthInnerHTML(strMonth) //ÔÂ·İµÄÏÂÀ­¿ò
+function tmpSelectMonthInnerHTML(strMonth) //æœˆä»½çš„ä¸‹æ‹‰æ¡†
 {
-if (strMonth.match(/\D/)!=null){alert("ÔÂ·İÊäÈë²ÎÊı²»ÊÇÊı×Ö£¡");return;}
+if (strMonth.match(/\D/)!=null){alert("æœˆä»½è¾“å…¥å‚æ•°ä¸æ˜¯æ•°å­—ï¼");return;}
 var m = (strMonth) ? strMonth : new Date().getMonth() + 1;
 var s = "<select Author=meizz name=tmpSelectMonth style='font-size: 12px' "
      s += "onblur='document.all.tmpSelectMonthLayer.style.display=\"none\"' "
@@ -133,8 +133,8 @@ var selectInnerHTML = s;
 for (var i = 1; i < 13; i++)
 {
     if (i == m)
-       {selectInnerHTML += "<option value='"+i+"' selected>"+i+"ÔÂ"+"</option>\r\n";}
-    else {selectInnerHTML += "<option value='"+i+"'>"+i+"ÔÂ"+"</option>\r\n";}
+       {selectInnerHTML += "<option value='"+i+"' selected>"+i+"æœˆ"+"</option>\r\n";}
+    else {selectInnerHTML += "<option value='"+i+"'>"+i+"æœˆ"+"</option>\r\n";}
 }
 selectInnerHTML += "</select>";
 document.all.tmpSelectMonthLayer.style.display="";
@@ -142,7 +142,7 @@ document.all.tmpSelectMonthLayer.innerHTML = selectInnerHTML;
 document.all.tmpSelectMonth.focus();
 }
 
-function closeLayer()               //Õâ¸ö²ãµÄ¹Ø±Õ
+function closeLayer()               //è¿™ä¸ªå±‚çš„å…³é—­
 {
     document.all.meizzDateLayer.style.display="none";
 }
@@ -152,31 +152,31 @@ function document.onkeydown()
     if (window.event.keyCode==27)document.all.meizzDateLayer.style.display="none";
 }
 
-function IsPinYear(year)            //ÅĞ¶ÏÊÇ·ñÈòÆ½Äê
+function IsPinYear(year)            //åˆ¤æ–­æ˜¯å¦é—°å¹³å¹´
 {
     if (0==year%4&&((year%100!=0)||(year%400==0))) return true;else return false;
 }
 
-function GetMonthCount(year,month) //ÈòÄê¶şÔÂÎª29Ìì
+function GetMonthCount(year,month) //é—°å¹´äºŒæœˆä¸º29å¤©
 {
     var c=MonHead[month-1];if((month==2)&&IsPinYear(year)) c++;return c;
 }
 
-function GetDOW(day,month,year)     //ÇóÄ³ÌìµÄĞÇÆÚ¼¸
+function GetDOW(day,month,year)     //æ±‚æŸå¤©çš„æ˜ŸæœŸå‡ 
 {
     var dt=new Date(year,month-1,day).getDay()/7; return dt;
 }
 
-function meizzPrevY() //ÍùÇ°·­ Year
+function meizzPrevY() //å¾€å‰ç¿» Year
 {
     if(meizzTheYear > 999 && meizzTheYear <10000){meizzTheYear--;}
-    else{alert("Äê·İ³¬³ö·¶Î§£¨1000-9999£©£¡");}
+    else{alert("å¹´ä»½è¶…å‡ºèŒƒå›´ï¼ˆ1000-9999ï¼‰ï¼");}
     meizzSetDay(meizzTheYear,meizzTheMonth);
 }
-function meizzNextY() //Íùºó·­ Year
+function meizzNextY() //å¾€åç¿» Year
 {
     if(meizzTheYear > 999 && meizzTheYear <10000){meizzTheYear++;}
-    else{alert("Äê·İ³¬³ö·¶Î§£¨1000-9999£©£¡");}
+    else{alert("å¹´ä»½è¶…å‡ºèŒƒå›´ï¼ˆ1000-9999ï¼‰ï¼");}
     meizzSetDay(meizzTheYear,meizzTheMonth);
 }
 function meizzToday() //Today Button
@@ -185,25 +185,25 @@ function meizzToday() //Today Button
     meizzTheMonth = new Date().getMonth()+1;
     meizzSetDay(meizzTheYear,meizzTheMonth);
 }
-function meizzPrevM() //ÍùÇ°·­ÔÂ·İ
+function meizzPrevM() //å¾€å‰ç¿»æœˆä»½
 {
     if(meizzTheMonth>1){meizzTheMonth--}else{meizzTheYear--;meizzTheMonth=12;}
     meizzSetDay(meizzTheYear,meizzTheMonth);
 }
-function meizzNextM() //Íùºó·­ÔÂ·İ
+function meizzNextM() //å¾€åç¿»æœˆä»½
 {
     if(meizzTheMonth==12){meizzTheYear++;meizzTheMonth=1}else{meizzTheMonth++}
     meizzSetDay(meizzTheYear,meizzTheMonth);
 }
 
-function meizzSetDay(yy,mm)   //Ö÷ÒªµÄĞ´³ÌĞò**********
+function meizzSetDay(yy,mm)   //ä¸»è¦çš„å†™ç¨‹åº**********
 {
 meizzWriteHead(yy,mm);
-for (var i = 0; i < 37; i++){meizzWDay[i]=""}; //½«ÏÔÊ¾¿òµÄÄÚÈİÈ«²¿Çå¿Õ
-var day1 = 1,firstday = new Date(yy,mm-1,1).getDay(); //Ä³ÔÂµÚÒ»ÌìµÄĞÇÆÚ¼¸
+for (var i = 0; i < 37; i++){meizzWDay[i]=""}; //å°†æ˜¾ç¤ºæ¡†çš„å†…å®¹å…¨éƒ¨æ¸…ç©º
+var day1 = 1,firstday = new Date(yy,mm-1,1).getDay(); //æŸæœˆç¬¬ä¸€å¤©çš„æ˜ŸæœŸå‡ 
 for (var i = firstday; day1 < GetMonthCount(yy,mm)+1; i++){meizzWDay[i]=day1;day1++;}
 for (var i = 0; i < 37; i++)
-{ var da = eval("document.all.meizzDay"+i)     //ÊéĞ´ĞÂµÄÒ»¸öÔÂµÄÈÕÆÚĞÇÆÚÅÅÁĞ
+{ var da = eval("document.all.meizzDay"+i)     //ä¹¦å†™æ–°çš„ä¸€ä¸ªæœˆçš„æ—¥æœŸæ˜ŸæœŸæ’åˆ—
     if (meizzWDay[i]!="")
       { da.innerHTML = "<b>" + meizzWDay[i] + "</b>";
         da.style.backgroundColor = (yy == new Date().getFullYear() &&
@@ -213,7 +213,7 @@ for (var i = 0; i < 37; i++)
     else{da.innerHTML="";da.style.backgroundColor="";da.style.cursor="default"}
 }
 }
-function meizzDayClick(n) //µã»÷ÏÔÊ¾¿òÑ¡È¡ÈÕÆÚ£¬Ö÷ÊäÈëº¯Êı*************
+function meizzDayClick(n) //ç‚¹å‡»æ˜¾ç¤ºæ¡†é€‰å–æ—¥æœŸï¼Œä¸»è¾“å…¥å‡½æ•°*************
 {
 var yy = meizzTheYear;
 var mm = meizzTheMonth;
@@ -222,10 +222,10 @@ if (outObject)
 {
     if (!n) {outObject.value=""; return;}
     if ( n < 10){n = "0" + n;}
-    outObject.value= yy + "-" + mm + "-" + n ; //×¢£ºÔÚÕâÀïÄã¿ÉÒÔÊä³ö¸Ä³ÉÄãÏëÒªµÄ¸ñÊ½
+    outObject.value= yy + "-" + mm + "-" + n ; //æ³¨ï¼šåœ¨è¿™é‡Œä½ å¯ä»¥è¾“å‡ºæ”¹æˆä½ æƒ³è¦çš„æ ¼å¼
     closeLayer(); 
 }
-else {closeLayer(); alert("ÄúËùÒªÊä³öµÄ¿Ø¼ş¶ÔÏó²¢²»´æÔÚ£¡");}
+else {closeLayer(); alert("æ‚¨æ‰€è¦è¾“å‡ºçš„æ§ä»¶å¯¹è±¡å¹¶ä¸å­˜åœ¨ï¼");}
 }
 meizzSetDay(meizzTheYear,meizzTheMonth);
 
@@ -234,7 +234,7 @@ function link(){
 	 for(var i=0;i< fom.textfield.value.length;i++){
 			var ch = fom.textfield.value.charAt(i);
 			if(ch<"0" || ch>"9"){
-				alert("Ô±¹¤±àºÅÎªÊı×Ö");
+				alert("å‘˜å·¥ç¼–å·ä¸ºæ•°å­—");
 				return false;
 			}
 		}                                                                                    
@@ -243,22 +243,22 @@ function link(){
 	 for(var i=0;i< fom.textfield9.value.length;i++){
 			var ch = fom.textfield9.value.charAt(i);
 			if(ch<"0" || ch>"9"){
-				alert("Éí·İÖ¤ºÅÎªÊı×Ö");
+				alert("èº«ä»½è¯å·ä¸ºæ•°å­—");
 				return false;
 			}
 		} 
-	 if(document.fom.textfield.value ==''||document.fom.textfield9.value ==''||document.fom.textfield2.value ==''||document.fom.textfield63512.value==''||document.fom.textfield5.value ==''||document.fom.textfield6.value ==''|| document.fom.textfield4.value ==''||document.fom.textfield7.value ==''||document.fom.textfield8.value ==''||document.fom.textfield6333.value ==''||document.fom.textfield6334.value =='')           { alert("±ØÒªÌõ¼ş²»ÄÜ¶¼Îª¿Õ");   
+	 if(document.fom.textfield.value ==''||document.fom.textfield9.value ==''||document.fom.textfield2.value ==''||document.fom.textfield63512.value==''||document.fom.textfield5.value ==''||document.fom.textfield6.value ==''|| document.fom.textfield4.value ==''||document.fom.textfield7.value ==''||document.fom.textfield8.value ==''||document.fom.textfield6333.value ==''||document.fom.textfield6334.value =='')           { alert("å¿…è¦æ¡ä»¶ä¸èƒ½éƒ½ä¸ºç©º");   
 	        return false;} 
 			                                                                  
-	  if(document.fom.select3.value =='0')  { alert("ÓÃ¹¤ĞÎÊ½²»ÄÜÎªÄ¬ÈÏ");   
+	  if(document.fom.select3.value =='0')  { alert("ç”¨å·¥å½¢å¼ä¸èƒ½ä¸ºé»˜è®¤");   
 	        return false;} 
-if(document.fom.select4.value =='0')  { alert("ÈËÔ±À´Ô´²»ÄÜÎªÄ¬ÈÏ");   
+if(document.fom.select4.value =='0')  { alert("äººå‘˜æ¥æºä¸èƒ½ä¸ºé»˜è®¤");   
 	        return false;} 
-if(document.fom.select2.value =='0')  { alert("Ãñ×å²»ÄÜÎªÄ¬ÈÏ");   
+if(document.fom.select2.value =='0')  { alert("æ°‘æ—ä¸èƒ½ä¸ºé»˜è®¤");   
 	        return false;} 
-			if(document.fom.select10.value =='0')  { alert("ÍâÓïÓïÖÖ²»ÄÜÎªÄ¬ÈÏ");   
+			if(document.fom.select10.value =='0')  { alert("å¤–è¯­è¯­ç§ä¸èƒ½ä¸ºé»˜è®¤");   
 	        return false;}
-			if(document.fom.select12.value =='0')  { alert("Óë±¾ÈË¹ØÏµ²»ÄÜÎªÄ¬ÈÏ");   
+			if(document.fom.select12.value =='0')  { alert("ä¸æœ¬äººå…³ç³»ä¸èƒ½ä¸ºé»˜è®¤");   
 	        return false;}         return true;                                                                                                                   
 	}  
 	                
@@ -271,183 +271,183 @@ if(document.fom.select2.value =='0')  { alert("Ãñ×å²»ÄÜÎªÄ¬ÈÏ");
     <div class="MainDiv">
       <table width="97%" border="0" cellpadding="0" cellspacing="0" class="CContent">
         <tr>
-          <th class="tablestyle_title" ><div align="left">ÔÚÖ°ÈËÔ±ĞÅÏ¢Ò³Ãæ</div></th>
+          <th class="tablestyle_title" ><div align="left">åœ¨èŒäººå‘˜ä¿¡æ¯é¡µé¢</div></th>
         </tr>
         <tr>
           <td class="CPanel"><table width="95%" border="0" align="center" cellpadding="4" cellspacing="1" bgcolor="#464646" class="newfont03">
             <tr class="CTitle" >
-              <td height="22" colspan="11" align="center" style="font-size:16px"><p>ÔÚÖ°ÈËÔ±ĞÅÏ¢±í</p></td>
+              <td height="22" colspan="11" align="center" style="font-size:16px"><p>åœ¨èŒäººå‘˜ä¿¡æ¯è¡¨</p></td>
             </tr>
             <tr bgcolor="#EEEEEE">
               <td rowspan="5" align="center"><div align="center">
-                <p>Ô±¹¤»ù±¾ĞÅÏ¢</p>
+                <p>å‘˜å·¥åŸºæœ¬ä¿¡æ¯</p>
               </div></td>
-              <td width="84">Ô±¹¤±àºÅ*</td>
+              <td width="84">å‘˜å·¥ç¼–å·*</td>
               <td width="107"><label>
                 <input name="textfield" type="text"  size="15" />
               </label></td>
-              <td width="84">ĞÕÃû*</td>
+              <td width="84">å§“å*</td>
               <td width="87"><label>
                 <input name="textfield2" type="text" size="10" />
               </label></td>
-              <td width="84">ĞÔ±ğ</td>
+              <td width="84">æ€§åˆ«</td>
               <td width="89"><label>
                 <select name="select">
-                  <option value="ĞÔ±ğ">ĞÔ±ğ</option>
-                  <option value="ÄĞ">ÄĞ</option>
-                  <option value="Å®">Å®</option>
+                  <option value="æ€§åˆ«">æ€§åˆ«</option>
+                  <option value="ç”·">ç”·</option>
+                  <option value="å¥³">å¥³</option>
                 </select>
               </label></td>
-              <td width="84">³öÉúÈÕÆÚ*</td>
+              <td width="84">å‡ºç”Ÿæ—¥æœŸ*</td>
               <td width="88"><label>
                 <input name="textfield4" type="text"onclick="setday(this)"  size="10" />
               </label></td>
-              <td width="84">Éí·İÖ¤ºÅ*</td>
+              <td width="84">èº«ä»½è¯å·*</td>
               <td width="179"><label>
                 <input name="textfield9" type="text"  size="10" />
               </label></td>
             </tr>
             <tr bgcolor="#EEEEEE">
-              <td>²¿ÃÅ*</td>
+              <td>éƒ¨é—¨*</td>
               <td><label>
                 <input name="textfield5" type="text"  size="15" />
               </label></td>
-              <td>¸ÚÎ»*</td>
+              <td>å²—ä½*</td>
               <td><label>
                 <input name="textfield6" type="text"  size="12" />
               </label></td>
-              <td>Ãñ×å*</td>
+              <td>æ°‘æ—*</td>
               <td><label>
                 <select name="select2">
-                  <option value="0">Ãñ×å</option>
-                  <option value="ºº ">ºº</option>
-                  <option value="Âú">Âú</option>
-                  <option value="»Ø">»Ø</option>
-                  <option value="³¯ÏÊ">³¯ÏÊ</option>
-                  <option value="Ãç">Ãç</option>
+                  <option value="0">æ°‘æ—</option>
+                  <option value="æ±‰ ">æ±‰</option>
+                  <option value="æ»¡">æ»¡</option>
+                  <option value="å›">å›</option>
+                  <option value="æœé²œ">æœé²œ</option>
+                  <option value="è‹—">è‹—</option>
                 </select>
               </label></td>
-              <td>ÈëÖ°ÈÕÆÚ*</td>
+              <td>å…¥èŒæ—¥æœŸ*</td>
               <td><label>
                 <input name="textfield7" type="text" onclick="setday(this)"  size="10"/>
               </label></td>
-              <td>²Î¼Ó¹¤×÷ÈÕÆÚ*</td>
+              <td>å‚åŠ å·¥ä½œæ—¥æœŸ*</td>
               <td><label>
                 <input name="textfield8" type="text" onclick="setday(this)"  size="10" />
               </label></td>
             </tr>
             <tr bgcolor="#EEEEEE">
-              <td>ÓÃ¹¤ĞÎÊ½*</td>
+              <td>ç”¨å·¥å½¢å¼*</td>
               <td><label>
                 <select name="select3">
-                  <option value="0">ÓÃ¹¤ĞÎÊ½</option>
-                  <option value="ÕıÊ½Ô±¹¤">ÕıÊ½Ô±¹¤</option>
-                  <option value="ÁÙÊ±Ô±¹¤">ÁÙÊ±Ô±¹¤</option>
+                  <option value="0">ç”¨å·¥å½¢å¼</option>
+                  <option value="æ­£å¼å‘˜å·¥">æ­£å¼å‘˜å·¥</option>
+                  <option value="ä¸´æ—¶å‘˜å·¥">ä¸´æ—¶å‘˜å·¥</option>
                 </select>
               </label></td>
-              <td>ÈËÔ±À´Ô´*</td>
+              <td>äººå‘˜æ¥æº*</td>
               <td><label>
                 <select name="select4">
-                  <option value="0">ÈËÔ±À´Ô´</option>
-                  <option value="Éç»áÕĞÆ¸">Éç»áÕĞÆ¸</option>
-                  <option value="Ğ£Ô°ÕĞÆ¸">Ğ£Ô°ÕĞÆ¸</option>
-                  <option value="ÆäËû">ÆäËû</option>
+                  <option value="0">äººå‘˜æ¥æº</option>
+                  <option value="ç¤¾ä¼šæ‹›è˜">ç¤¾ä¼šæ‹›è˜</option>
+                  <option value="æ ¡å›­æ‹›è˜">æ ¡å›­æ‹›è˜</option>
+                  <option value="å…¶ä»–">å…¶ä»–</option>
                 </select>
               </label></td>
-              <td>ÕşÖÎÃæÃ²</td>
+              <td>æ”¿æ²»é¢è²Œ</td>
               <td><label>
                 <select name="select5">
-                  <option value="ÕşÖÎÃæÃ²">ÕşÖÎÃæÃ²</option>
-                  <option value="µ³Ô±">µ³Ô±</option>
-                  <option value="Ô¤±¸µ³Ô±">Ô¤±¸µ³Ô±</option>
-                  <option value="ÍÅÔ±">ÍÅÔ±</option>
-                  <option value="ÆäËû">ÆäËû</option>
+                  <option value="æ”¿æ²»é¢è²Œ">æ”¿æ²»é¢è²Œ</option>
+                  <option value="å…šå‘˜">å…šå‘˜</option>
+                  <option value="é¢„å¤‡å…šå‘˜">é¢„å¤‡å…šå‘˜</option>
+                  <option value="å›¢å‘˜">å›¢å‘˜</option>
+                  <option value="å…¶ä»–">å…¶ä»–</option>
                 </select>
               </label></td>
-              <td>³öÉúµØ</td>
+              <td>å‡ºç”Ÿåœ°</td>
               <td><label>
                 <input name="textfield72" type="text"  size="10" />
               </label></td>
-              <td>¼®¹á</td>
+              <td>ç±è´¯</td>
               <td><label>
                 <input name="textfield73" type="text"  size="10" />
               </label></td>
             </tr>
             <tr bgcolor="#EEEEEE">
-              <td>ÁªÏµµç»°</td>
+              <td>è”ç³»ç”µè¯</td>
               <td><input name="textfield74" type="text"  size="10" /></td>
-              <td>µç×ÓÓÊ¼ş</td>
+              <td>ç”µå­é‚®ä»¶</td>
               <td><input name="textfield75" type="text"  size="10" /></td>
-              <td>Éí¸ß</td>
+              <td>èº«é«˜</td>
               <td><input name="textfield76" type="text"  size="10" /></td>
-              <td>ÑªĞÍ</td>
+              <td>è¡€å‹</td>
               <td><label>
                 <select name="select6">
-                  <option value="ÑªĞÍ">ÑªĞÍ</option>
-                  <option value="AĞÍ">AĞÍ</option>
-                  <option value="BĞÍ">BĞÍ</option>
-                  <option value="ABĞÍ">ABĞÍ</option>
-                  <option value="OĞÍ">OĞÍ</option>
-                  <option value="ÆäËûĞÍ">ÆäËûĞÍ</option>
+                  <option value="è¡€å‹">è¡€å‹</option>
+                  <option value="Aå‹">Aå‹</option>
+                  <option value="Bå‹">Bå‹</option>
+                  <option value="ABå‹">ABå‹</option>
+                  <option value="Oå‹">Oå‹</option>
+                  <option value="å…¶ä»–å‹">å…¶ä»–å‹</option>
                 </select>
               </label></td>
-              <td>»éÒö×´¿ö</td>
+              <td>å©šå§»çŠ¶å†µ</td>
               <td><label>
                 <select name="select7">
-                  <option value="»éÒö×´¿ö">»éÒö×´¿ö</option>
-                  <option value="ÒÑ»é">ÒÑ»é</option>
-                  <option value="Î´»é">Î´»é</option>
-                  <option value="É¥Å¼">É¥Å¼</option>
-                  <option value="Àë»é">Àë»é</option>
-                  <option value="ÆäËû">ÆäËû</option>
+                  <option value="å©šå§»çŠ¶å†µ">å©šå§»çŠ¶å†µ</option>
+                  <option value="å·²å©š">å·²å©š</option>
+                  <option value="æœªå©š">æœªå©š</option>
+                  <option value="ä¸§å¶">ä¸§å¶</option>
+                  <option value="ç¦»å©š">ç¦»å©š</option>
+                  <option value="å…¶ä»–">å…¶ä»–</option>
                 </select>
               </label></td>
             </tr>
             <tr bgcolor="#EEEEEE">
-              <td>»§¿ÚËùÔÚµØ</td>
+              <td>æˆ·å£æ‰€åœ¨åœ°</td>
               <td><input name="textfield77" type="text"  size="10" /></td>
-              <td>×î¸ßÑ§Àú</td>
+              <td>æœ€é«˜å­¦å†</td>
               <td><label>
                 <select name="select8">
-                  <option value="×î¸ßÑ§Àú">×î¸ßÑ§Àú</option>
-                  <option value="¸ßÖĞÒÔÏÂ">¸ßÖĞÒÔÏÂ</option>
-                  <option value="´ó×¨">´ó×¨</option>
-                  <option value="±¾¿Æ">±¾¿Æ</option>
-                  <option value="ÑĞ¾¿Éú">ÑĞ¾¿Éú</option>
+                  <option value="æœ€é«˜å­¦å†">æœ€é«˜å­¦å†</option>
+                  <option value="é«˜ä¸­ä»¥ä¸‹">é«˜ä¸­ä»¥ä¸‹</option>
+                  <option value="å¤§ä¸“">å¤§ä¸“</option>
+                  <option value="æœ¬ç§‘">æœ¬ç§‘</option>
+                  <option value="ç ”ç©¶ç”Ÿ">ç ”ç©¶ç”Ÿ</option>
                 </select>
               </label></td>
-              <td>×î¸ßÑ§Î»</td>
+              <td>æœ€é«˜å­¦ä½</td>
               <td><label>
                 <select name="select9">
-                  <option value="×î¸ßÑ§Î»">×î¸ßÑ§Î»</option>
-                  <option value="ÎŞÑ§Î»">ÎŞÑ§Î»</option>
-                  <option>Ñ§Ê¿</option>
-                  <option>Ë«Ñ§Î»</option>
-                  <option>Ë¶Ê¿</option>
-                  <option>²©Ê¿</option>
-                  <option>²©Ê¿ºó</option>
+                  <option value="æœ€é«˜å­¦ä½">æœ€é«˜å­¦ä½</option>
+                  <option value="æ— å­¦ä½">æ— å­¦ä½</option>
+                  <option>å­¦å£«</option>
+                  <option>åŒå­¦ä½</option>
+                  <option>ç¡•å£«</option>
+                  <option>åšå£«</option>
+                  <option>åšå£«å</option>
                 </select>
               </label></td>
-              <td>±ÏÒµÔºĞ£</td>
+              <td>æ¯•ä¸šé™¢æ ¡</td>
               <td><input name="textfield78" type="text"  size="10" /></td>
-              <td>ËùÑ§×¨Òµ</td>
-              <td><input name="textfield90" type="text" value="¼ÆËã»ú" size="10" /></td>
+              <td>æ‰€å­¦ä¸“ä¸š</td>
+              <td><input name="textfield90" type="text" value="è®¡ç®—æœº" size="10" /></td>
             </tr>
             <tr bgcolor="#EEEEEE">
-              <td width="55" rowspan="7" align="center">ÆäËûĞÅÏ¢</td>
-              <td colspan="10"><strong>Ö°ÒµÉúÑÄ</strong></td>
+              <td width="55" rowspan="7" align="center">å…¶ä»–ä¿¡æ¯</td>
+              <td colspan="10"><strong>èŒä¸šç”Ÿæ¶¯</strong></td>
             </tr>
             <tr bgcolor="#EEEEEE">
-              <td>ÆğÊ¼ÄêÔÂ*</td>
-              <td>½ØÖÁÄêÔÂ*</td>
-              <td>ËùÔÚµ¥Î»</td>
-              <td>¹¤×÷ÄÚÈİ</td>
-              <td>µ£ÈÎÖ°Îñ</td>
-              <td>ÔÂĞ½/ÄêĞ½</td>
-              <td>Ö¤Ã÷ÈË</td>
-              <td>Ö¤Ã÷ÈËÖ°Îñ</td>
-              <td>Ö¤Ã÷ÈËµç»°</td>
-              <td><p>±¸×¢</p></td>
+              <td>èµ·å§‹å¹´æœˆ*</td>
+              <td>æˆªè‡³å¹´æœˆ*</td>
+              <td>æ‰€åœ¨å•ä½</td>
+              <td>å·¥ä½œå†…å®¹</td>
+              <td>æ‹…ä»»èŒåŠ¡</td>
+              <td>æœˆè–ª/å¹´è–ª</td>
+              <td>è¯æ˜äºº</td>
+              <td>è¯æ˜äººèŒåŠ¡</td>
+              <td>è¯æ˜äººç”µè¯</td>
+              <td><p>å¤‡æ³¨</p></td>
             </tr>
             <tr bgcolor="#EEEEEE">
               <td><input name="textfield6333" type="text" size="12" onclick="setday(this)" /></td>
@@ -462,47 +462,47 @@ if(document.fom.select2.value =='0')  { alert("Ãñ×å²»ÄÜÎªÄ¬ÈÏ");
               <td><input name="textfield635132" type="text" size="25" /></td>
             </tr>
             <tr bgcolor="#EEEEEE">
-              <td colspan="2"><strong>Íâ¹úÓïÖÖ*</strong></td>
+              <td colspan="2"><strong>å¤–å›½è¯­ç§*</strong></td>
               <td colspan="3"><label>
                 <select name="select10">
-                  <option value="0">Íâ¹úÓïÖÖ</option>
-                  <option value="Ó¢Óï">Ó¢Óï</option>
-                  <option value="ÈÕÓï">ÈÕÓï</option>
-                  <option value="·¨Óï">·¨Óï</option>
-                  <option value="¶íÓï">¶íÓï</option>
-                  <option value="ÆäËû">ÆäËû</option>
+                  <option value="0">å¤–å›½è¯­ç§</option>
+                  <option value="è‹±è¯­">è‹±è¯­</option>
+                  <option value="æ—¥è¯­">æ—¥è¯­</option>
+                  <option value="æ³•è¯­">æ³•è¯­</option>
+                  <option value="ä¿„è¯­">ä¿„è¯­</option>
+                  <option value="å…¶ä»–">å…¶ä»–</option>
                 </select>
               </label></td>
-              <td colspan="2">Íâ¹úÓïÖÖÊìÁ·³Ì¶È</td>
+              <td colspan="2">å¤–å›½è¯­ç§ç†Ÿç»ƒç¨‹åº¦</td>
               <td colspan="3"><label>
                 <select name="select11">
-				<option value="6">ÍâÓïÊìÁ·³Ì¶È</option>
-                  <option>0 ÍêÈ«²»¶®</option>
-                  <option>1 ÉÙÁ¿£¬²»ÄÜ½øĞĞÒµÎñ¹µÍ¨</option>
-                  <option>2 ÓĞÏŞµÄÒµÎñ¹µÍ¨</option>
-                  <option>3 Ò»°ã£¬ÒµÎñ¹µÍ¨ÈÔÊÜÉÙÁ¿ÏŞÖÆ</option>
-                  <option>4 ºÃ£¬ ÎŞÀ§ÄÑµØ½øĞĞÌ¸ÅĞºÍ½²Ñİ</option>
-                  <option>5 Á÷Àû£¬ÔÚÉÌÎñÖĞ×ÔÈçµØÔËÓÃ</option>
+				<option value="6">å¤–è¯­ç†Ÿç»ƒç¨‹åº¦</option>
+                  <option>0 å®Œå…¨ä¸æ‡‚</option>
+                  <option>1 å°‘é‡ï¼Œä¸èƒ½è¿›è¡Œä¸šåŠ¡æ²Ÿé€š</option>
+                  <option>2 æœ‰é™çš„ä¸šåŠ¡æ²Ÿé€š</option>
+                  <option>3 ä¸€èˆ¬ï¼Œä¸šåŠ¡æ²Ÿé€šä»å—å°‘é‡é™åˆ¶</option>
+                  <option>4 å¥½ï¼Œ æ— å›°éš¾åœ°è¿›è¡Œè°ˆåˆ¤å’Œè®²æ¼”</option>
+                  <option>5 æµåˆ©ï¼Œåœ¨å•†åŠ¡ä¸­è‡ªå¦‚åœ°è¿ç”¨</option>
                 </select>
               </label></td>
             </tr>
             <tr bgcolor="#EEEEEE">
-              <td colspan="10"><strong>¼ÒÍ¥³ÉÔ±¼°Éç»á¹ØÏµ</strong></td>
+              <td colspan="10"><strong>å®¶åº­æˆå‘˜åŠç¤¾ä¼šå…³ç³»</strong></td>
             </tr>
             <tr bgcolor="#EEEEEE">
-              <td colspan="2">Óë±¾ÈË¹ØÏµ*</td>
-              <td colspan="2">ĞÕÃû*</td>
-              <td colspan="3">ËùÔÚµ¥Î»</td>
-              <td>Ö°Î»</td>
-              <td colspan="2">ÁªÏµµç»°</td>
+              <td colspan="2">ä¸æœ¬äººå…³ç³»*</td>
+              <td colspan="2">å§“å*</td>
+              <td colspan="3">æ‰€åœ¨å•ä½</td>
+              <td>èŒä½</td>
+              <td colspan="2">è”ç³»ç”µè¯</td>
             </tr>
             <tr bgcolor="#EEEEEE">
               <td colspan="2"><label>
                 <select name="select12">
-                  <option value="0">Óë±¾ÈË¹ØÏµ</option>
-                  <option value="¸¸Ç×">¸¸Ç×</option>
-                  <option value="Ä¸Ç×">Ä¸Ç×</option>
-                  <option value="ÅäÅ¼">ÅäÅ¼</option>
+                  <option value="0">ä¸æœ¬äººå…³ç³»</option>
+                  <option value="çˆ¶äº²">çˆ¶äº²</option>
+                  <option value="æ¯äº²">æ¯äº²</option>
+                  <option value="é…å¶">é…å¶</option>
                 </select>
               </label></td>
               <td colspan="2"><input name="textfield63512" type="text" size="12" /></td>
@@ -515,10 +515,10 @@ if(document.fom.select2.value =='0')  { alert("Ãñ×å²»ÄÜÎªÄ¬ÈÏ");
       </table>
       <br />
       <div align="center">
-        <input  type="submit" name="Submit" value="±£´æ" />
+        <input  type="submit" name="Submit" value="ä¿å­˜" />
         &nbsp;&nbsp;
         &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input  type="reset"  name="Submit2" value="È¡Ïû" />
+        <input  type="reset"  name="Submit2" value="å–æ¶ˆ" />
       </div>
     </div>
   </form>

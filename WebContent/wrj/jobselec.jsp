@@ -116,7 +116,7 @@
     */
 
     int PAGE_SIZE = 10;
-    Pager.setPager(PAGE_SIZE, request, session, new Pager.OnQueryListener<SkJob>() {
+    Pager.setPager(PAGE_SIZE, request, new Pager.OnQueryListener<SkJob>() {
         @Override
         public List<SkJob> queryList(int offset, int rowCount) {
             return new JobDao().query(Query.where(null).limit(offset, rowCount));
@@ -227,7 +227,7 @@
                                                                 <div align="center">${job.name}</div>
                                                             </td>
                                                             <td>
-                                                                <div align="center">${job.jobType.attrName}</div>
+                                                                <div align="center">${job.jobType.valueName}</div>
                                                             </td>
                                                             <td>
                                                                 <div align="center">${job.dept.name}</div>

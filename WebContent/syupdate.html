@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/common.css" type="text/css" />
-<title>ÎŞ±êÌâÎÄµµ</title>
+<title>æ— æ ‡é¢˜æ–‡æ¡£</title>
 <style type="text/css">
 body {
 	margin-left: 0px;
@@ -18,24 +18,24 @@ body {
 <script language="javascripe">
 function yanzheng(){
 
-//----¿¼ºË½á¹ûÑéÖ¤----//
+//----è€ƒæ ¸ç»“æœéªŒè¯----//
 var kaohe=document.form1.zt.value;                                                                                                         
 				if(kaohe=="haha"){                                                                                                                            
-					alert("ÇëÑ¡Ôñ¿¼ºË½á¹û");                                                                                                                     
+					alert("è¯·é€‰æ‹©è€ƒæ ¸ç»“æœ");                                                                                                                     
 					return false;                                                                                                                           
 				}
 
                                                                                              
 var py=document.form1.pingyu.value;                                                                                                         
 if(py==''){                                                                                                                            
-alert("ÇëÌîĞ´¿¼ºËÆÀÓï");
+alert("è¯·å¡«å†™è€ƒæ ¸è¯„è¯­");
 return false;                                                                                                                           
 				}
 //-----
 var zhuan=document.form1.zt.value;
-if(zhuan=='×ªÕı'||zhuan=='ÑÓÆÚ')
+if(zhuan=='è½¬æ­£'||zhuan=='å»¶æœŸ')
 {
- var b2 = confirm('ÊÇ·ñ½øĞĞĞŞ¸Ä£¿'); 
+ var b2 = confirm('æ˜¯å¦è¿›è¡Œä¿®æ”¹ï¼Ÿ'); 
  if(b2==true){
   window.location.href='trueupdate.html'; 
   return false;
@@ -47,9 +47,9 @@ if(zhuan=='×ªÕı'||zhuan=='ÑÓÆÚ')
 return b2;
 }
  //-------
-if(zhuan=='²»Â¼ÓÃ')
+if(zhuan=='ä¸å½•ç”¨')
 {
- var b1 = confirm('ÊÇ·ñ½øĞĞÀëÖ°´¦Àí£¿'); 
+ var b1 = confirm('æ˜¯å¦è¿›è¡Œç¦»èŒå¤„ç†ï¼Ÿ'); 
  if(b1==true){
   window.location.href='leavingselect.html'; 
   return false;
@@ -70,54 +70,54 @@ return b1;
 <div id="man_zone">
 <p class="STYLE1"></p>
 <form id="form1" name="form1" method="post" action=""  onsubmit=" return yanzheng();">
-<p>ÊÔÓÃÆÚ¿¼ºË±í</p>
+<p>è¯•ç”¨æœŸè€ƒæ ¸è¡¨</p>
 <table width="100%" border="0">
   <tr>
-    <td><div align="center" class="STYLE2">ÊÔÓÃÆÚ¿¼ºË±í</div></td>
+    <td><div align="center" class="STYLE2">è¯•ç”¨æœŸè€ƒæ ¸è¡¨</div></td>
   </tr>
 </table>
  <label><br />
   </label>
 <table width="34%" height="100%" border="0" align="center" >
   <tr>
-    <td width="93">¿¼ºË½á¹û</td>
+    <td width="93">è€ƒæ ¸ç»“æœ</td>
     <td width="192">
       <select name="zt">
-        <option value="haha">----ÇëÑ¡Ôñ----</option>
-        <option value="×ªÕı">×ªÕı</option>
-        <option value="ÑÓÆÚ">ÑÓÆÚ</option>
-        <option value="²»Â¼ÓÃ">²»Â¼ÓÃ</option>
+        <option value="haha">----è¯·é€‰æ‹©----</option>
+        <option value="è½¬æ­£">è½¬æ­£</option>
+        <option value="å»¶æœŸ">å»¶æœŸ</option>
+        <option value="ä¸å½•ç”¨">ä¸å½•ç”¨</option>
       </select>
    
     </td>
-    <td width="47">*±ØÌî</td>
+    <td width="47">*å¿…å¡«</td>
   </tr>
   <tr>
-    <td>´¦ÀíÈÕÆÚ</td>
+    <td>å¤„ç†æ—¥æœŸ</td>
     <td><input type="text" id="starttime2" onClick="WdatePicker()" readonly="readonly"  name="time"/></td>
-    <td>*±ØÌî</td>
+    <td>*å¿…å¡«</td>
   </tr>
   <tr>
-    <td>ÊÔÓÃÆÚ¿¼ºËÆÀÓï</td>
+    <td>è¯•ç”¨æœŸè€ƒæ ¸è¯„è¯­</td>
     <td>
       <textarea name="pingyu" cols="25" rows="10"  ></textarea>
     </td>
-    <td>*±ØÌî</td>
+    <td>*å¿…å¡«</td>
   </tr>
   <tr>
-    <td>±¸×¢</td>
+    <td>å¤‡æ³¨</td>
     <td>
       <textarea name="textarea" cols="25" rows="10"></textarea>
     </td>
-    <td>Ñ¡Ìî</td>
+    <td>é€‰å¡«</td>
   </tr>
   <tr>
     <td>
-      <input type="submit" name="Submit" value="ĞŞ¸Ä"   />
+      <input type="submit" name="Submit" value="ä¿®æ”¹"   />
     
     </td>
     <td>
-      <input type="button" name="Submit2" value="È¡Ïû"   onclick="return cancle()"/>
+      <input type="button" name="Submit2" value="å–æ¶ˆ"   onclick="return cancle()"/>
    
     </td>
     <td>&nbsp;</td>

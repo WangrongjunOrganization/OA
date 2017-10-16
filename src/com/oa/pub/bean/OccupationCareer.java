@@ -16,9 +16,8 @@ public class OccupationCareer {// 职业生涯信息
     @ManyToOne
     private SkEmp emp;// 员工
     private Date beginTime;// 起始年月
-    private Date endTime;// 截至年月（如果为空，则代表正在该岗位工作）
-    @ManyToOne
-    private SkJob job;// 所在岗位
+    private Date endTime;// 截至年月（如果为空，则代表正在工作）
+    private String jobName;// 所在岗位
     private String jobDiscrip;// 从事工作内容
     private String position;// 担任职务
     private double salary;// 年薪/月薪
@@ -32,11 +31,11 @@ public class OccupationCareer {// 职业生涯信息
     public OccupationCareer() {
     }
 
-    public OccupationCareer(SkEmp emp, Date beginTime, Date endTime, SkJob job, double salary) {
+    public OccupationCareer(SkEmp emp, Date beginTime, Date endTime, String jobName, double salary) {
         this.emp = emp;
         this.beginTime = beginTime;
         this.endTime = endTime;
-        this.job = job;
+        this.jobName = jobName;
         this.salary = salary;
     }
 
@@ -72,12 +71,12 @@ public class OccupationCareer {// 职业生涯信息
         this.endTime = endTime;
     }
 
-    public SkJob getJob() {
-        return job;
+    public String getJobName() {
+        return jobName;
     }
 
-    public void setJob(SkJob job) {
-        this.job = job;
+    public void setJobName(String jobName) {
+        this.jobName = jobName;
     }
 
     public String getJobDiscrip() {

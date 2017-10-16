@@ -12,34 +12,34 @@
     <title>Title</title>
 </head>
 <body>
+<button onclick="del()">删除</button>
+<table>
+    <tr>
+        <th>选择</th>
+        <th>编号</th>
+        <th>姓名</th>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>1</td>
+        <td>wrj</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>2</td>
+        <td>hjc</td>
+    </tr>
+</table>
 
+<script src="../js/jquery-1.9.0.min.js"></script>
 <script>
 
-    // 定义
-    var map = new Map();
-
-    // 添加数据
-    map.set(1, 10);
-    map.set("2", 20);
-    map.set(3, "30");
-
-    // 根据键获取值
-    console.log(map.get(1));// 10
-    console.log(map.get("1"));// undefined
-    console.log(map.get(2));// undefined
-    console.log(map.get("2"));// 20
-    console.log(map.get(3));// "30"
-
-    // 获取长度
-    console.log(map.size);// 3
-
-    // 遍历
-    map.forEach(function (value, key) {
-        console.log(key + " - " + value);
-        // "1 - 10"
-        // "2 - 20"
-        // "3 - 30"
-    });
+    function del() {
+        console.log($(":checked"));
+        console.log($(":checked").parent());
+        console.log($(":checked").parent().parent());
+        $(":checked").parent().parent().remove();
+    }
 
 </script>
 
